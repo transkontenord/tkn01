@@ -1,0 +1,34 @@
+name = TKN - 01
+description = Drupal 7 theme for TKN
+core = 7.x
+
+;;;;;;;;;;;;;;;;;;;;
+;; Regions
+;;;;;;;;;;;;;;;;;;;;
+
+regions[page_top]            = Page top
+regions[page_bottom]         = Page bottom
+regions[content]             = Content
+
+regions[header]              = Header
+regions[slider]              = Slider
+regions[before_content]      = Before content
+regions[after_content]       = After content
+regions[footer_firstcolumn]  = Footer first column
+regions[footer_secondcolumn] = Footer second column
+regions[footer_thirdcolumn]  = Footer third column
+regions[footer]              = Footer
+
+;;;;;;;;;;;;;;;;;;;;
+;; Stylesheets
+;;;;;;;;;;;;;;;;;;;;
+
+stylesheets[all][] = a/j/bootstrap/dist/css/bootstrap.min.css
+stylesheets[screen, projection][] = a/c/screen.css
+stylesheets[print][] = a/c/print.css
+
+;;;;;;;;;;;;;;;;;;;;
+;; Scripts
+;;;;;;;;;;;;;;;;;;;;
+
+scripts[] = a/j/bootstrap/dist/js/bootstrap.min.js
