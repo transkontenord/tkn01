@@ -8,8 +8,9 @@
   <?php print $head; ?>
   <?php print $styles; ?>
   <?php print $scripts; ?>
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic,700italic,300,300italic' rel='stylesheet' type='text/css'>
 </head>
-<body>
+<body class="<?php (drupal_is_front_page()) ? print "front" : print "no-front"; ?>">
 <?php print $page_top; ?>
 <?php print $page; ?>
 <?php print $page_bottom; ?>

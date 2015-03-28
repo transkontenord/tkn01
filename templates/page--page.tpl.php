@@ -33,8 +33,11 @@
 
 
 
-<main>
-  <div class="container-fluid bg-green">
+<main class="page">
+<?php if (isset($banner)): ?>
+  <?php $bg = 'style = "background-image: url(' . $banner . ');"'; ?>
+<?php endif; ?>
+<div class="container-fluid bg-green" <?php if(isset($banner)) { print $bg;} ?>>
     <h1><?php print $title; ?></h1>
   </div>
   <?php if ($tabs): ?>

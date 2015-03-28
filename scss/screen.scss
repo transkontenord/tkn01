@@ -1,2 +1,21 @@
-body {
+@import "compass/reset";
+
+@import "colors";
+@import "typography";
+
+.navbar {
+  margin-bottom: 0;
+}
+.navbar-header {
+  padding-bottom: 50px;
+  .navbar-brand {
+    padding: 0;
+  }
+}
+.navbar-nav {
+}
+
+main.page {
+  h1 {
+  }
 }

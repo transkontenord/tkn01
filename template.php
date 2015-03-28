@@ -13,11 +13,19 @@ function tkn01_preprocess_html(&$variables) {
 }
 
 function tkn01_preprocess_page(&$variables) {
-  // Page suggestions
   if (isset($variables['node'])) {
-    $suggestion = 'page__' . str_replace('-', '--', $variables['node']->type);
+    $node = $variables['node'];
+    // Page suggestions
+    $suggestion = 'page__' . str_replace('-', '--', $node->type);
     $variables['theme_hook_suggestions'][] = $suggestion;
+    // Page banner
+    if ($node->type == 'page' && !empty($node->field_page_banner)) {
+      $banner = field_get_items('node',$node,'field_page_banner');
+      $banner = image_style_url('page_banner', $banner[0]['uri']);
+      $variables['banner'] = $banner;
+    }
   }
+
   // Primary nav
   $variables['primary_nav'] = FALSE;
   if ($variables['main_menu']) {

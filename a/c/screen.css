@@ -1,0 +1,212 @@
+/* line 5, ../../../../../../../../.rvm/gems/ruby-2.1.3@webdesign/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../../.rvm/gems/ruby-2.1.3@webdesign/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../.rvm/gems/ruby-2.1.3@webdesign/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../.rvm/gems/ruby-2.1.3@webdesign/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../.rvm/gems/ruby-2.1.3@webdesign/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../.rvm/gems/ruby-2.1.3@webdesign/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../.rvm/gems/ruby-2.1.3@webdesign/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../.rvm/gems/ruby-2.1.3@webdesign/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../.rvm/gems/ruby-2.1.3@webdesign/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 12, ../../scss/_colors.scss */
+a,
+a:visited {
+  color: #405200;
+}
+
+/* line 16, ../../scss/_colors.scss */
+a:hover,
+a:focus {
+  color: #718f00;
+}
+
+/* line 24, ../../scss/_colors.scss */
+strong {
+  color: #718f00;
+}
+
+/* line 28, ../../scss/_colors.scss */
+.container-fluid.bg-green {
+  background-color: #a2cd00;
+}
+
+/* line 32, ../../scss/_colors.scss */
+main.page .container-fluid.bg-green {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+/* line 37, ../../scss/_colors.scss */
+main.page .container-fluid.bg-green h1 {
+  color: white;
+}
+
+/* line 106, ../../../../../../../../.rvm/gems/ruby-2.1.3@webdesign/gems/compass-core-1.0.3/stylesheets/compass/typography/_vertical_rhythm.scss */
+html {
+  font-size: 100%;
+  line-height: 1.5em;
+}
+
+/* line 8, ../../scss/_typography.scss */
+h1 {
+  font-size: 2.5em;
+}
+
+/* line 9, ../../scss/_typography.scss */
+h2 {
+  font-size: 2.2em;
+}
+
+/* line 10, ../../scss/_typography.scss */
+h3 {
+  font-size: 2.1em;
+}
+
+/* line 11, ../../scss/_typography.scss */
+h4 {
+  font-size: 1.8em;
+}
+
+/* line 12, ../../scss/_typography.scss */
+h5 {
+  font-size: 1.5em;
+}
+
+/* line 13, ../../scss/_typography.scss */
+h6 {
+  font-size: 1.2em;
+}
+
+/* line 15, ../../scss/_typography.scss */
+dt {
+  font-weight: 700;
+}
+
+/* line 17, ../../scss/_typography.scss */
+strong {
+  font-weight: 700;
+}
+
+/* line 21, ../../scss/_typography.scss */
+body {
+  font-family: "Source Sans Pro", sasns-serif;
+}
+
+/**
+ * page--page
+ */
+/* line 29, ../../scss/_typography.scss */
+main h1 {
+  text-align: center;
+}
+/* line 32, ../../scss/_typography.scss */
+main h1, main h2, main h3, main h4, main h5, main h6 {
+  margin-top: 1.5em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 1.5em;
+}
+/* line 35, ../../scss/_typography.scss */
+main p {
+  margin-top: 1.5em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 1.5em;
+}
+/* line 38, ../../scss/_typography.scss */
+main dl {
+  margin-top: 1.5em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 1.5em;
+}
+/* line 42, ../../scss/_typography.scss */
+main.page h1 {
+  border-width: 0.0625em;
+  border-style: solid;
+  padding: 1.4375em;
+  border: none;
+}
+/* line 46, ../../scss/_typography.scss */
+main.page h2, main.page h3 {
+  font-weight: 300;
+}
+/* line 50, ../../scss/_typography.scss */
+main.page .content .field-name-field-page-intro {
+  font-size: 1.1875em;
+  line-height: 1.89474em;
+  border-width: 0.0625em;
+  border-style: solid;
+  padding: 1.4375em;
+  border: none;
+  border-bottom: solid 1px #405200;
+}
+
+/* line 6, ../../scss/screen.scss */
+.navbar {
+  margin-bottom: 0;
+}
+
+/* line 9, ../../scss/screen.scss */
+.navbar-header {
+  padding-bottom: 50px;
+}
+/* line 11, ../../scss/screen.scss */
+.navbar-header .navbar-brand {
+  padding: 0;
+}

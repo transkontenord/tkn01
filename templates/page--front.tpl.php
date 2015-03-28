@@ -14,7 +14,6 @@
         <img src="<?php print $logo; ?>" alt="<?php print $site_name; ?>">
       </a>
     </div>
-
     <div class="collapse navbar-collapse" id="navbar-main-menu">
       <?php print render($primary_nav); ?>
     </div>
