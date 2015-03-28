@@ -2,7 +2,7 @@
 <!-- Navigation -->
 <nav class="navbar navbar-default">
   <div class="container">
-
+<div class="row">
     <div class="navbar-header page-scroll">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-main-menu">
         <span class="sr-only"><?php print t('Toggle navigation'); ?></span>
@@ -14,10 +14,13 @@
         <img src="<?php print $logo; ?>" alt="<?php print $site_name; ?>">
       </a>
     </div>
+</div>
 
+<div class="row">
     <div class="collapse navbar-collapse" id="navbar-main-menu">
       <?php print render($primary_nav); ?>
     </div>
+</div>
 
   </div>
 </nav>
@@ -53,3 +56,24 @@
     <?php print render($page['after_content']); ?>
   </div>
 </main>
+
+<footer>
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <?php print render($page['footer_firstcolumn']); ?>
+        </div>
+        <div class="col-md-4">
+          <?php print render($page['footer_secondcolumn']); ?>
+        </div>
+        <div class="col-md-4">
+          <?php print render($page['footer_thirdcolumn']); ?>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <?php print render($page['footer']); ?>
+  </section>
+</footer>

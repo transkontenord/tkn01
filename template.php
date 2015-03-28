@@ -35,5 +35,5 @@ function tkn01_preprocess_page(&$variables) {
 }
 
 function tkn01_menu_tree__primary(&$variables) {
-  return '<ul class="nav navbar-nav navbar-right">' .$variables['tree'] . '</ul>';
+  return '<ul class="nav navbar-nav">' .$variables['tree'] . '</ul>';
 }

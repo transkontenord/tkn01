@@ -8,6 +8,8 @@ $green-d0: shade($green-base, 30);
 $green-d1: shade($green-base, 60);
 $green-d2: shade($green-base, 90);
 
+$gris-oscuro: #333;
+
 
 a,
 a:visited {
@@ -29,6 +31,10 @@ strong {
   background-color: $green-base;
 }
 
+.navbar {
+  background-color: white;
+}
+
 main.page .container-fluid.bg-green {
   //@include background($green-base image-url("/sites/all/themes/tkn01/a/i/truck_1.jpg"));
   background-size: cover;
@@ -36,5 +42,23 @@ main.page .container-fluid.bg-green {
   background-repeat: no-repeat;
   h1 {
     color: white;
+  }
+}
+
+footer {
+  background-color: $gris-oscuro;
+  color: $green-l0;
+  a,
+  a:visited {
+    color: $green-l1;
+  }
+  a:hover,
+  a:focus {
+    color: $green-l0;
+  }
+  dl {
+    dt {
+      display: none;
+    }
   }
 }

@@ -49,3 +49,24 @@
     <?php print render($page['after_content']); ?>
   </div>
 </main>
+
+<footer>
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <?php print render($page['footer_firstcolumn']); ?>
+        </div>
+        <div class="col-md-4">
+          <?php print render($page['footer_secondcolumn']); ?>
+        </div>
+        <div class="col-md-4">
+          <?php print render($page['footer_thirdcolumn']); ?>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <?php print render($page['footer']); ?>
+  </section>
+</footer>
