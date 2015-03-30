@@ -35,13 +35,15 @@ strong {
   background-color: white;
 }
 
-main.page .container-fluid.bg-green {
-  //@include background($green-base image-url("/sites/all/themes/tkn01/a/i/truck_1.jpg"));
-  background-size: cover;
-  background-position: center left;
-  background-repeat: no-repeat;
-  h1 {
-    color: white;
+main.page {
+  .container-fluid.bg-green {
+    //@include background($green-base image-url("/sites/all/themes/tkn01/a/i/truck_1.jpg"));
+    background-size: cover;
+    background-position: center left;
+    background-repeat: no-repeat;
+    h1 {
+      color: white;
+    }
   }
 }
 

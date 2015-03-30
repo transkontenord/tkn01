@@ -3,6 +3,7 @@
 <nav class="navbar navbar-default">
   <div class="container">
 
+  <div class="row">
     <div class="navbar-header page-scroll">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-main-menu">
         <span class="sr-only"><?php print t('Toggle navigation'); ?></span>
@@ -14,9 +15,13 @@
         <img src="<?php print $logo; ?>" alt="<?php print $site_name; ?>">
       </a>
     </div>
+  </div>
+
+  <div class="row">
     <div class="collapse navbar-collapse" id="navbar-main-menu">
       <?php print render($primary_nav); ?>
     </div>
+  </div>
 
   </div>
 </nav>

@@ -90,33 +90,33 @@ strong {
   background-color: white;
 }
 
-/* line 38, ../../scss/_colors.scss */
+/* line 39, ../../scss/_colors.scss */
 main.page .container-fluid.bg-green {
   background-size: cover;
   background-position: center left;
   background-repeat: no-repeat;
 }
-/* line 43, ../../scss/_colors.scss */
+/* line 44, ../../scss/_colors.scss */
 main.page .container-fluid.bg-green h1 {
   color: white;
 }
 
-/* line 48, ../../scss/_colors.scss */
+/* line 50, ../../scss/_colors.scss */
 footer {
   background-color: #333;
   color: #bddc4c;
 }
-/* line 51, ../../scss/_colors.scss */
+/* line 53, ../../scss/_colors.scss */
 footer a,
 footer a:visited {
   color: #d9eb99;
 }
-/* line 55, ../../scss/_colors.scss */
+/* line 57, ../../scss/_colors.scss */
 footer a:hover,
 footer a:focus {
   color: #bddc4c;
 }
-/* line 60, ../../scss/_colors.scss */
+/* line 62, ../../scss/_colors.scss */
 footer dl dt {
   display: none;
 }
@@ -139,22 +139,22 @@ h2 {
 
 /* line 10, ../../scss/_typography.scss */
 h3 {
-  font-size: 2.1em;
+  font-size: 1.9em;
 }
 
 /* line 11, ../../scss/_typography.scss */
 h4 {
-  font-size: 1.8em;
+  font-size: 1.6em;
 }
 
 /* line 12, ../../scss/_typography.scss */
 h5 {
-  font-size: 1.5em;
+  font-size: 1.3em;
 }
 
 /* line 13, ../../scss/_typography.scss */
 h6 {
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
 
 /* line 15, ../../scss/_typography.scss */
@@ -172,10 +172,7 @@ body {
   font-family: "Source Sans Pro", sasns-serif;
 }
 
-/**
- * page--page
- */
-/* line 28, ../../scss/_typography.scss */
+/* line 25, ../../scss/_typography.scss */
 main {
   margin-top: 1.5em;
   padding-top: 0em;
@@ -183,43 +180,45 @@ main {
   margin-bottom: 1.5em;
   margin-top: 0;
 }
-/* line 31, ../../scss/_typography.scss */
+/* line 28, ../../scss/_typography.scss */
 main h1 {
   text-align: center;
 }
-/* line 34, ../../scss/_typography.scss */
+/* line 31, ../../scss/_typography.scss */
 main h1, main h2, main h3, main h4, main h5, main h6 {
   margin-top: 1.5em;
   padding-top: 0em;
   padding-bottom: 0em;
   margin-bottom: 1.5em;
+  text-transform: uppercase;
 }
-/* line 37, ../../scss/_typography.scss */
+/* line 35, ../../scss/_typography.scss */
 main p {
   margin-top: 1.5em;
   padding-top: 0em;
   padding-bottom: 0em;
   margin-bottom: 1.5em;
 }
-/* line 40, ../../scss/_typography.scss */
+/* line 38, ../../scss/_typography.scss */
 main dl {
   margin-top: 1.5em;
   padding-top: 0em;
   padding-bottom: 0em;
   margin-bottom: 1.5em;
 }
+/* line 42, ../../scss/_typography.scss */
+main.page {
+  font-weight: 300;
+}
 /* line 44, ../../scss/_typography.scss */
 main.page h1 {
+  font-weight: 400;
   border-width: 0.0625em;
   border-style: solid;
   padding: 1.4375em;
   border: none;
 }
-/* line 48, ../../scss/_typography.scss */
-main.page h2, main.page h3 {
-  font-weight: 300;
-}
-/* line 52, ../../scss/_typography.scss */
+/* line 50, ../../scss/_typography.scss */
 main.page .content .field-name-field-page-intro {
   font-size: 1.1875em;
   line-height: 1.89474em;
@@ -229,8 +228,44 @@ main.page .content .field-name-field-page-intro {
   border: none;
   border-bottom: solid 1px #405200;
 }
-
+/* line 55, ../../scss/_typography.scss */
+main.page .content .field-name-field-page-intro p {
+  font-weight: 400;
+}
+/* line 59, ../../scss/_typography.scss */
+main.page .content article.equipo {
+  text-align: center;
+  margin-top: 1.5em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 1.5em;
+}
 /* line 62, ../../scss/_typography.scss */
+main.page .content article.equipo img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
+/* line 67, ../../scss/_typography.scss */
+main.page .content article.equipo .caption {
+  border-width: 0.0625em;
+  border-style: solid;
+  padding: 1.4375em;
+  border: none;
+  width: 100%;
+  background-color: rgba(162, 205, 0, 0.8);
+}
+/* line 73, ../../scss/_typography.scss */
+main.page .content article.equipo .caption h1, main.page .content article.equipo .caption h2 {
+  font-size: 1em;
+  line-height: 2.25em;
+  margin-top: 0em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 0em;
+}
+
+/* line 85, ../../scss/_typography.scss */
 footer {
   border-width: 0.0625em;
   border-style: solid;
@@ -238,7 +273,7 @@ footer {
   border: none;
   font-weight: 300;
 }
-/* line 66, ../../scss/_typography.scss */
+/* line 89, ../../scss/_typography.scss */
 footer .block {
   border-width: 0.0625em;
   border-style: solid;
@@ -246,7 +281,7 @@ footer .block {
   border: none;
   border-right: dotted 1px #718f00;
 }
-/* line 70, ../../scss/_typography.scss */
+/* line 93, ../../scss/_typography.scss */
 footer .block h2 {
   margin-top: 1.5em;
   padding-top: 0em;

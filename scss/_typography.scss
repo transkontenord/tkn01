@@ -7,10 +7,10 @@ $base-line-height: 24px;
 
 h1 { font-size: 2.5em; }
 h2 { font-size: 2.2em; }
-h3 { font-size: 2.1em; }
-h4 { font-size: 1.8em; }
-h5 { font-size: 1.5em; }
-h6 { font-size: 1.2em; }
+h3 { font-size: 1.9em; }
+h4 { font-size: 1.6em; }
+h5 { font-size: 1.3em; }
+h6 { font-size: 1.1em; }
 
 dt { font-weight: 700; }
 
@@ -22,9 +22,6 @@ body {
   font-family: "Source Sans Pro", sasns-serif;
 }
 
-/**
- * page--page
- */
 main {
   @include rhythm;
   margin-top: 0;
@@ -33,6 +30,7 @@ main {
   }
   h1,h2,h3,h4,h5,h6 {
     @include rhythm;
+    text-transform: uppercase;
   }
   p {
     @include rhythm;
@@ -40,13 +38,13 @@ main {
   dl {
     @include rhythm;
   }
+
   &.page {
+    font-weight: 300;
     h1 {
+      font-weight: 400;
       @include rhythm-borders;
       border: none;
-    }
-    h2,h3 {
-      font-weight: 300;
     }
     .content {
       .field-name-field-page-intro {
@@ -54,6 +52,31 @@ main {
         @include rhythm-borders;
         border: none;
         border-bottom: solid 1px $green-d1;
+        p {
+          font-weight: 400;
+        }
+      }
+      article.equipo {
+        text-align: center;
+        @include rhythm;
+        img {
+          display: block;
+          width: 100%;
+          max-width: 100%;
+        }
+        .caption {
+          @include rhythm-borders;
+          border: none;
+          width: 100%;
+          background-color: rgba($green-base,0.8);
+          //@include adjust-font-size-to(12px, 1.5);
+          h1, h2 {
+            @include adjust-font-size-to(16px, 1.5);
+            @include rhythm(0);
+          }
+          a.social {
+          }
+        }
       }
     }
   }
