@@ -68,7 +68,7 @@ main {
           @include rhythm-borders;
           border: none;
           width: 100%;
-          background-color: rgba($green-base,0.8);
+          background-color: rgba($green-base,0.2);
           //@include adjust-font-size-to(12px, 1.5);
           h1, h2 {
             @include adjust-font-size-to(16px, 1.5);
@@ -89,7 +89,11 @@ footer {
   .block {
     @include rhythm-borders;
     border: none;
-    border-right: dotted 1px $green-d0;
+    border-bottom: dotted 1px $green-d0;
+    @media (min-width: 768px) {
+      border-bottom: none;
+      border-right: dotted 1px $green-d0;
+    }
     h2 {
       @include rhythm;
       margin-top: 0;

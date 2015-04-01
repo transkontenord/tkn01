@@ -253,7 +253,7 @@ main.page .content article.equipo .caption {
   padding: 1.4375em;
   border: none;
   width: 100%;
-  background-color: rgba(162, 205, 0, 0.8);
+  background-color: rgba(162, 205, 0, 0.2);
 }
 /* line 73, ../../scss/_typography.scss */
 main.page .content article.equipo .caption h1, main.page .content article.equipo .caption h2 {
@@ -279,9 +279,16 @@ footer .block {
   border-style: solid;
   padding: 1.4375em;
   border: none;
-  border-right: dotted 1px #718f00;
+  border-bottom: dotted 1px #718f00;
 }
-/* line 93, ../../scss/_typography.scss */
+@media (min-width: 768px) {
+  /* line 89, ../../scss/_typography.scss */
+  footer .block {
+    border-bottom: none;
+    border-right: dotted 1px #718f00;
+  }
+}
+/* line 97, ../../scss/_typography.scss */
 footer .block h2 {
   margin-top: 1.5em;
   padding-top: 0em;
