@@ -12,9 +12,7 @@
         <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand page-scroll" href="<?php print base_path(); ?>">
-        <figure class="col-xs-4">
-          <img src="<?php print base_path() . path_to_theme(); ?>/a/i/logo.svg" data-fb="<?php print $logo; ?>" onerror="this.src = this.getAttribute('data-fb');" class="img-responsive">
-        </figure>
+          <img src="<?php print base_path() . path_to_theme(); ?>/a/i/logo.svg" class="img-responsive">
       </a>
     </div>
   </div>

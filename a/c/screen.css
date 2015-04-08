@@ -353,17 +353,18 @@ footer .block h2 {
 /* line 11, ../../scss/screen.scss */
 .navbar-header .navbar-brand {
   padding: 0;
+  width: 25%;
 }
 
 @media (min-width: 768px) {
-  /* line 20, ../../scss/screen.scss */
+  /* line 21, ../../scss/screen.scss */
   .navbar .navbar-nav {
     display: inline-block;
     float: none;
     vertical-align: top;
   }
 
-  /* line 26, ../../scss/screen.scss */
+  /* line 27, ../../scss/screen.scss */
   .navbar .navbar-collapse {
     text-align: center;
   }
