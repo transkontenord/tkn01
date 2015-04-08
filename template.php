@@ -37,3 +37,20 @@ function tkn01_preprocess_page(&$variables) {
 function tkn01_menu_tree__primary(&$variables) {
   return '<ul class="nav navbar-nav">' .$variables['tree'] . '</ul>';
 }
+
+/**
+ * Contact template
+ * http://www.lightrains.com/blog/theme-contact-form-drupal-7#gsc.tab=0
+ */
+function tkn01_theme() {
+  return array(
+    'contact_site_form' => array(
+      'render element' => 'form',
+      'template' => 'contact-site-form',
+      'path' => drupal_get_path('theme', 'tkn01').'/templates',
+    ),
+  );
+}
+function tkn01_preprocess_contact_site_form(&$vars) {
+  $vars['contact'] = drupal_render_children($vars['form']);
+}
