@@ -11,7 +11,7 @@
         <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand page-scroll" href="<?php print base_path(); ?>">
-        <img src="<?php print $logo; ?> class="img-responsive">
+        <img src="<?php print $logo; ?>" class="img-responsive">
       </a>
     </div>
 </div>
