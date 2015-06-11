@@ -29,7 +29,7 @@ function tkn01_preprocess_page(&$variables) {
   // Primary nav
   $variables['primary_nav'] = FALSE;
   if ($variables['main_menu']) {
-    $variables['primary_nav'] = menu_tree(variable_get('menu_main_links_source', 'main_menu'));
+    $variables['primary_nav'] = menu_tree(variable_get('menu_main_links_source', 'main-menu'));
     $variables['primary_nav']['#theme_wrappers'] = array('menu_tree__primary');
   }
 }
