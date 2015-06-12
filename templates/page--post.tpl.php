@@ -1,6 +1,6 @@
 <?php print render($page['header']); ?>
 <!-- Navigation -->
-<nav class="navbar navbar-default">
+<nav id="main-menu" class="navbar navbar-default">
   <div class="container">
 <div class="row">
     <div class="navbar-header page-scroll">
@@ -43,17 +43,20 @@
   <div class="container-fluid bg-green" <?php if(isset($banner)) { print $bg;} ?>>
     <h1><?php print t('news'); ?></h1>
   </div>
-  <?php if ($tabs): ?>
-  <aside id="tabs">
-    <div class="container tabs">
-      <?php print render($tabs); ?>
-    </div>
-  </aside>
-  <?php endif; ?>
   <div class="container">
-    <?php print render($page['before_content']); ?>
-    <?php print render($page['content']); ?>
-    <?php print render($page['after_content']); ?>
+    <div class="row">
+      <div class="col-md-9">
+        <?php print render($page['before_content']); ?>
+        <?php if ($tabs): ?>
+        <?php print render($tabs); ?>
+        <?php endif; ?>
+        <?php print render($page['content']); ?>
+        <?php print render($page['after_content']); ?>
+      </div>
+      <div class="col-md-3">
+        <?php print render($page['sidebar_first']); ?>
+      </div>
+    </div>
   </div>
 </main>
 

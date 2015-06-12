@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* line 5, ../../../../../../../../.rvm/gems/ruby-2.1.3@webdesign/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -80,47 +81,6 @@ strong {
   color: #718f00;
 }
 
-/* line 30, ../../scss/_colors.scss */
-.container-fluid.bg-green {
-  background-color: #a2cd00;
-}
-
-/* line 34, ../../scss/_colors.scss */
-.navbar {
-  background-color: white;
-}
-
-/* line 39, ../../scss/_colors.scss */
-main.page .container-fluid.bg-green {
-  background-size: cover;
-  background-position: center left;
-  background-repeat: no-repeat;
-}
-/* line 44, ../../scss/_colors.scss */
-main.page .container-fluid.bg-green h1 {
-  color: white;
-}
-
-/* line 50, ../../scss/_colors.scss */
-footer {
-  background-color: #333;
-  color: #bddc4c;
-}
-/* line 53, ../../scss/_colors.scss */
-footer a,
-footer a:visited {
-  color: #d9eb99;
-}
-/* line 57, ../../scss/_colors.scss */
-footer a:hover,
-footer a:focus {
-  color: #bddc4c;
-}
-/* line 62, ../../scss/_colors.scss */
-footer dl dt {
-  display: none;
-}
-
 /* line 106, ../../../../../../../../.rvm/gems/ruby-2.1.3@webdesign/gems/compass-core-1.0.3/stylesheets/compass/typography/_vertical_rhythm.scss */
 html {
   font-size: 100%;
@@ -178,30 +138,89 @@ strong {
   font-weight: 700;
 }
 
-/* line 25, ../../scss/_typography.scss */
-#navbar-main-menu {
+/* line 6, ../../scss/screen.scss */
+input,
+textarea,
+select {
+  background: transparent none repeat scroll 0 0;
+  border: 1px solid #acacac;
+  box-sizing: border-box;
+  color: #666;
+  display: block;
+  margin-bottom: 1em;
+  max-width: 100%;
+  padding: 0.375em 0.625em;
+}
+
+/* line 18, ../../scss/screen.scss */
+input[type="submit"] {
+  background-color: #718f00;
+  border: medium none;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 1.125em;
+  padding: 0.375em 0.75em;
+  font-weight: 400;
+}
+/* line 27, ../../scss/screen.scss */
+input[type="submit"]:hover {
+  background-color: #a2cd00;
+}
+
+/**
+ * Menú
+ */
+/* line 36, ../../scss/screen.scss */
+#main-menu.navbar {
+  margin-bottom: 0;
+  background-color: white;
+}
+/* line 39, ../../scss/screen.scss */
+#main-menu.navbar .navbar-header {
+  padding-bottom: 50px;
+}
+/* line 41, ../../scss/screen.scss */
+#main-menu.navbar .navbar-header .navbar-brand {
+  padding: 0;
+}
+/* line 47, ../../scss/screen.scss */
+#main-menu.navbar #navbar-main-menu {
   text-transform: uppercase;
 }
 @media (min-width: 768px) {
-  /* line 25, ../../scss/_typography.scss */
-  #navbar-main-menu {
+  /* line 47, ../../scss/screen.scss */
+  #main-menu.navbar #navbar-main-menu {
     margin-bottom: 1em;
   }
-  /* line 30, ../../scss/_typography.scss */
-  #navbar-main-menu .active-trail a {
+  /* line 52, ../../scss/screen.scss */
+  #main-menu.navbar #navbar-main-menu .active-trail a {
     border-bottom: dotted 1px #a2cd00;
   }
 }
+@media (min-width: 768px) {
+  /* line 59, ../../scss/screen.scss */
+  #main-menu.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+  }
+  /* line 65, ../../scss/screen.scss */
+  #main-menu.navbar .navbar-collapse {
+    text-align: center;
+  }
+}
 
-/* line 37, ../../scss/_typography.scss */
+/* line 71, ../../scss/screen.scss */
 main {
+  font-weight: 300;
   margin-top: 1.5em;
   padding-top: 0em;
   padding-bottom: 0em;
   margin-bottom: 1.5em;
   margin-top: 0;
 }
-/* line 40, ../../scss/_typography.scss */
+/* line 75, ../../scss/screen.scss */
 main h1 {
   margin-top: 1.5em;
   padding-top: 0em;
@@ -209,37 +228,37 @@ main h1 {
   margin-bottom: 1.5em;
   text-align: center;
 }
-/* line 44, ../../scss/_typography.scss */
+/* line 79, ../../scss/screen.scss */
 main h1, main h2, main h3, main h4, main h5, main h6 {
   text-transform: uppercase;
 }
-/* line 47, ../../scss/_typography.scss */
+/* line 82, ../../scss/screen.scss */
 main p {
   margin-top: 1.5em;
   padding-top: 0em;
   padding-bottom: 0em;
   margin-bottom: 1.5em;
 }
-/* line 50, ../../scss/_typography.scss */
+/* line 85, ../../scss/screen.scss */
 main dl {
   margin-top: 1.5em;
   padding-top: 0em;
   padding-bottom: 0em;
   margin-bottom: 1.5em;
 }
-/* line 54, ../../scss/_typography.scss */
-main.page {
-  font-weight: 300;
+/* line 88, ../../scss/screen.scss */
+main .container-fluid.bg-green {
+  background-color: #a2cd00;
+  color: white;
+  margin-bottom: 1.5em;
 }
-/* line 56, ../../scss/_typography.scss */
-main.page h1 {
-  font-weight: 400;
-  border-width: 0.0625em;
-  border-style: solid;
-  padding: 1.4375em;
-  border: none;
+/* line 95, ../../scss/screen.scss */
+main.page .container-fluid.bg-green {
+  background-size: cover;
+  background-position: center left;
+  background-repeat: no-repeat;
 }
-/* line 62, ../../scss/_typography.scss */
+/* line 106, ../../scss/screen.scss */
 main.page .content .field-name-field-page-intro {
   font-size: 1.1875em;
   line-height: 1.89474em;
@@ -249,18 +268,18 @@ main.page .content .field-name-field-page-intro {
   border: none;
   border-bottom: solid 1px #405200;
 }
-/* line 67, ../../scss/_typography.scss */
+/* line 111, ../../scss/screen.scss */
 main.page .content .field-name-field-page-intro p {
   font-weight: 400;
 }
-/* line 71, ../../scss/_typography.scss */
+/* line 115, ../../scss/screen.scss */
 main.page .content .field-name-body {
   margin-top: 1.5em;
   padding-top: 0em;
   padding-bottom: 0em;
   margin-bottom: 1.5em;
 }
-/* line 74, ../../scss/_typography.scss */
+/* line 118, ../../scss/screen.scss */
 main.page .content article.equipo {
   text-align: center;
   margin-top: 1.5em;
@@ -268,13 +287,13 @@ main.page .content article.equipo {
   padding-bottom: 0em;
   margin-bottom: 1.5em;
 }
-/* line 77, ../../scss/_typography.scss */
+/* line 121, ../../scss/screen.scss */
 main.page .content article.equipo img {
   display: block;
   width: 100%;
   max-width: 100%;
 }
-/* line 82, ../../scss/_typography.scss */
+/* line 126, ../../scss/screen.scss */
 main.page .content article.equipo .caption {
   border-width: 0.0625em;
   border-style: solid;
@@ -283,7 +302,7 @@ main.page .content article.equipo .caption {
   width: 100%;
   background-color: rgba(162, 205, 0, 0.2);
 }
-/* line 88, ../../scss/_typography.scss */
+/* line 132, ../../scss/screen.scss */
 main.page .content article.equipo .caption h1, main.page .content article.equipo .caption h2 {
   font-size: 1em;
   line-height: 2.25em;
@@ -292,30 +311,64 @@ main.page .content article.equipo .caption h1, main.page .content article.equipo
   padding-bottom: 0em;
   margin-bottom: 0em;
 }
-/* line 99, ../../scss/_typography.scss */
-main .view-news {
-  margin-top: 1.5em;
-  padding-top: 0em;
-  padding-bottom: 0em;
-  margin-bottom: 1.5em;
+
+/**
+ * Sidebar First
+ */
+/* line 147, ../../scss/screen.scss */
+.region-sidebar-first {
+  font-size: 0.875em;
+  line-height: 1.71429em;
 }
-/* line 101, ../../scss/_typography.scss */
-main .view-news .views-row {
-  margin-top: 1.5em;
-  padding-top: 0em;
-  padding-bottom: 0em;
-  margin-bottom: 1.5em;
+/* line 149, ../../scss/screen.scss */
+.region-sidebar-first .block {
+  margin-bottom: 2.8125em;
+}
+/* line 151, ../../scss/screen.scss */
+.region-sidebar-first .block h2 {
+  font-size: 1.125em;
+  line-height: 1.33333em;
+  font-weight: 700;
+  margin-bottom: 1.25em;
+}
+/* line 157, ../../scss/screen.scss */
+.region-sidebar-first .block dl dt {
+  display: none;
+}
+/* line 161, ../../scss/screen.scss */
+.region-sidebar-first .block dd,
+.region-sidebar-first .block li {
+  margin-bottom: 0.3125em;
 }
 
-/* line 107, ../../scss/_typography.scss */
+/**
+ * Footer
+ */
+/* line 171, ../../scss/screen.scss */
 footer {
   border-width: 0.0625em;
   border-style: solid;
   padding: 1.4375em;
   border: none;
   font-weight: 300;
+  background-color: #333;
+  color: #bddc4c;
 }
-/* line 111, ../../scss/_typography.scss */
+/* line 177, ../../scss/screen.scss */
+footer a,
+footer a:visited {
+  color: #d9eb99;
+}
+/* line 181, ../../scss/screen.scss */
+footer a:hover,
+footer a:focus {
+  color: #bddc4c;
+}
+/* line 186, ../../scss/screen.scss */
+footer dl dt {
+  display: none;
+}
+/* line 190, ../../scss/screen.scss */
 footer .block {
   border-width: 0.0625em;
   border-style: solid;
@@ -324,13 +377,13 @@ footer .block {
   border-bottom: dotted 1px #718f00;
 }
 @media (min-width: 768px) {
-  /* line 111, ../../scss/_typography.scss */
+  /* line 190, ../../scss/screen.scss */
   footer .block {
     border-bottom: none;
     border-right: dotted 1px #718f00;
   }
 }
-/* line 119, ../../scss/_typography.scss */
+/* line 198, ../../scss/screen.scss */
 footer .block h2 {
   margin-top: 1.5em;
   padding-top: 0em;
@@ -341,30 +394,72 @@ footer .block h2 {
   font-size: 1.2em;
 }
 
-/* line 6, ../../scss/screen.scss */
-.navbar {
-  margin-bottom: 0;
-}
-
-/* line 9, ../../scss/screen.scss */
-.navbar-header {
-  padding-bottom: 50px;
-}
-/* line 11, ../../scss/screen.scss */
-.navbar-header .navbar-brand {
-  padding: 0;
-}
-
-@media (min-width: 768px) {
-  /* line 20, ../../scss/screen.scss */
-  .navbar .navbar-nav {
-    display: inline-block;
-    float: none;
-    vertical-align: top;
+/**
+ * News
+ */
+/*
+.view-news {
+  @include rhythm;
+  margin-top: 0;
+  .views-row {
+    @include rhythm;
+  margin-top: 0;
   }
-
-  /* line 26, ../../scss/screen.scss */
-  .navbar .navbar-collapse {
-    text-align: center;
-  }
+}
+*/
+/* line 220, ../../scss/screen.scss */
+.node-post {
+  padding-bottom: 2.5em;
+  margin-bottom: 2.5em;
+  border-bottom: 1px dotted #ccc;
+}
+/* line 224, ../../scss/screen.scss */
+.node-post h1 {
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+/* line 228, ../../scss/screen.scss */
+.node-post .post-date {
+  float: left;
+  width: 6.25em;
+}
+/* line 231, ../../scss/screen.scss */
+.node-post .post-date .day {
+  margin: 0;
+  background-color: #fcfcfc;
+  color: #333;
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 36px;
+  padding: 20px 30px;
+  text-align: center;
+}
+/* line 241, ../../scss/screen.scss */
+.node-post .post-date .month {
+  margin: 0;
+  color: #fff;
+  background-color: #a2cd00;
+  font-weight: 700;
+  padding: 5px 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+/* line 251, ../../scss/screen.scss */
+.node-post .content {
+  padding-left: 8.125em;
+  text-align: justify;
+}
+/* line 254, ../../scss/screen.scss */
+.node-post .content h2 {
+  margin-bottom: 1.5em;
+}
+/* line 258, ../../scss/screen.scss */
+.node-post .content .node-readmore a {
+  float: right;
+  position: relative;
+  display: block;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: all 0.2s ease 0s;
+  color: #a2cd00;
 }

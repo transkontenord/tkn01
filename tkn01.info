@@ -14,6 +14,7 @@ regions[header]              = Header
 regions[slider]              = Slider
 regions[before_content]      = Before content
 regions[after_content]       = After content
+regions[sidebar_first]       = Sidebar first
 regions[footer_firstcolumn]  = Footer first column
 regions[footer_secondcolumn] = Footer second column
 regions[footer_thirdcolumn]  = Footer third column

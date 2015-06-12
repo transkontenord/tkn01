@@ -1,6 +1,6 @@
 <?php print render($page['header']); ?>
 <!-- Navigation -->
-<nav class="navbar navbar-default">
+<nav id="main-menu" class="navbar navbar-default">
   <div class="container">
 
   <div class="row">
