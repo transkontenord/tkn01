@@ -81,6 +81,10 @@
  */
 ?>
 <article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?>"<?php print $attributes; ?>>
+  <?php if (isset($foto) && $page): ?>
+    <img src="<?php print $foto; ?>" class="img-responsive">
+  <?php endif; ?>
+
   <?php
     $dia =  date('d',$created);
     $mes =  date('M',$created);
@@ -89,22 +93,20 @@
     <p class="day"><?php print $dia; ?></p>
     <p class="month"><?php print $mes; ?></p>
   </div>
+
+
+  <div class="content"<?php print $content_attributes; ?>>
   <?php if ($page): ?>
     <?php print render($title_prefix); ?>
     <h1<?php print $title_attributes; ?>><?php print $title; ?></h1>
     <?php print render($title_suffix); ?>
   <?php endif; ?>
-
-  <div class="content"<?php print $content_attributes; ?>>
     <?php if (!$page): ?>
       <?php print render($title_prefix); ?>
       <h3<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h3>
       <?php print render($title_suffix); ?>
     <?php endif; ?>
 
-  <?php if (isset($foto) && $page): ?>
-    <img src="<?php print $foto; ?>" class="img-responsive">
-  <?php endif; ?>
     <?php
       // We hide the comments and links now so that we can render them later.
       hide($content['comments']);

@@ -1,6 +1,6 @@
 <?php //dpm($variables); ?>
 <?php //dpm($row); ?>
-<article class="equipo col-xs-12 col-sm-6 col-md-4">
+<article class="equipo">
   <?php
     if ($row->field_field_team_member_photo):
       $uri = $row->field_field_team_member_photo[0]['raw']['uri'];

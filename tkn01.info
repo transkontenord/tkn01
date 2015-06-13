@@ -33,3 +33,5 @@ stylesheets[print][] = a/c/print.css
 ;;;;;;;;;;;;;;;;;;;;
 
 scripts[] = a/j/bootstrap/dist/js/bootstrap.min.js
+scripts[] = a/j/sticky/jquery.sticky.js
+scripts[] = a/j/custom.js

@@ -16,7 +16,8 @@
   ],
   "dependencies": {
     "bootstrap": "~3.3.2",
-    "slider-revolution": "~4.3.7"
+    "slider-revolution": "~4.3.7",
+    "sticky": "~1.0.1"
   },
   "devDependencies": {
     "html5shiv": "~3.7.2"

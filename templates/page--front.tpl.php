@@ -39,7 +39,7 @@
 
 <main>
   <div class="container-fluid bg-green">
-    <h1><?php print $title; ?></h1>
+    <h1><span><?php print $title; ?></span></h1>
   </div>
   <?php if ($tabs): ?>
   <aside id="tabs">
