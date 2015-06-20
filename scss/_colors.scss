@@ -1,5 +1,3 @@
-@import "compass/css3/images";
-
 $green-base: #a2cd00;
 $green-l0: tint($green-base, 30);
 $green-l1: tint($green-base, 60);
@@ -9,20 +7,3 @@ $green-d1: shade($green-base, 60);
 $green-d2: shade($green-base, 90);
 
 $gris-oscuro: #333;
-
-
-a,
-a:visited {
-  color: $green-d1;
-}
-a:hover,
-a:focus {
-  color: $green-d0;
-}
-
-p {
-  //color: $green-base;
-}
-strong {
-  color: $green-d0;
-}

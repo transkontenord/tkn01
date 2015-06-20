@@ -4,25 +4,3 @@
 $base-font-size: 16px;
 $base-line-height: 24px;
 @include establish-baseline;
-
-body {
-  font-family: "Source Sans Pro", sasns-serif;
-}
-
-h1 { @include adjust-font-size-to(2.5em); }
-h2 { @include adjust-font-size-to(2.2em); }
-h3 { @include adjust-font-size-to(1.9em); }
-h4 { @include adjust-font-size-to(1.6em); }
-h5 { @include adjust-font-size-to(1.3em); }
-h6 { @include adjust-font-size-to(1.1em); }
-
-dt { font-weight: 700; }
-
-strong {
-  font-weight: 700;
-}
-
-
-
-
-

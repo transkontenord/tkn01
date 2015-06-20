@@ -43,8 +43,34 @@ function tkn01_preprocess_node(&$variables) {
     }
 }
 
+function tkn01_preprocess_block(&$variables) {
+  $block = $variables['block'];
+  if ($block->bid === 'locale-language') {
+    $variables['classes_array'][] = 'pull-right';
+  }
+}
+
 function tkn01_menu_tree__primary(&$variables) {
   return '<ul class="nav navbar-nav">' .$variables['tree'] . '</ul>';
+}
+
+/**
+ * Language switcher
+ *
+ * https://www.drupal.org/node/1369090#comment-6553128
+ * https://www.drupal.org/node/1369090#comment-7421510
+ * https://www.drupal.org/node/1369090#comment-7628147
+ */
+function tkn01_links__locale_block(&$variables) {
+  $variables['attributes']['class'][] = 'list-inline';
+  foreach($variables['links'] as $language => $langInfo) {
+    $abbr = $langInfo['language']->language;
+    $name = $langInfo['language']->native;
+    $variables['links'][$language]['title'] = '<abbr title="' . $name . '">' . $abbr . '</abbr>';
+    $variables['links'][$language]['html'] = TRUE;
+  }
+  $content = theme_links($variables);
+  return $content;
 }
 
 /**

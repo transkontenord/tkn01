@@ -1,4 +1,6 @@
+<div class="container">
 <?php print render($page['header']); ?>
+</div>
 <!-- Navigation -->
 <nav id="main-menu" class="navbar navbar-default">
   <div class="container">

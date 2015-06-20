@@ -3,6 +3,42 @@
 @import "colors";
 @import "typography";
 
+body {
+  font-family: "Source Sans Pro", sasns-serif;
+}
+
+h1 { @include adjust-font-size-to(2.5em); }
+h2 { @include adjust-font-size-to(2.2em); }
+h3 { @include adjust-font-size-to(1.9em); }
+h4 { @include adjust-font-size-to(1.6em); }
+h5 { @include adjust-font-size-to(1.3em); }
+h6 { @include adjust-font-size-to(1.1em); }
+
+a,
+a:visited {
+  color: $green-d1;
+}
+
+a:hover,
+a:focus {
+  color: $green-d0;
+}
+
+p {
+  //color: $green-base;
+}
+
+dt { font-weight: 700; }
+
+strong {
+  font-weight: 700;
+  color: $green-d0;
+}
+
+em {
+  font-style: italic;
+}
+
 input,
 textarea,
 select {
@@ -31,9 +67,17 @@ input[type="submit"] {
 }
 
 /**
+ * Region Header
+ */
+.region.region-header {
+  overflow: hidden;
+}
+
+/**
  * Menú
  */
 #main-menu.navbar {
+  border-top:0;
   margin-bottom: 0;
   background-color: rgba(white, 0.9);
   width: 100%;
@@ -75,7 +119,7 @@ main {
   @include rhythm;
   margin-top: 0;
   h1 {
-    @include rhythm(2);
+    @include rhythm(4);
     text-align: center;
     span {
       padding: 0.5em;
