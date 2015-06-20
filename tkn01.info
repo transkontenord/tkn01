@@ -35,3 +35,13 @@ stylesheets[print][] = a/c/print.css
 scripts[] = a/j/bootstrap/dist/js/bootstrap.min.js
 scripts[] = a/j/sticky/jquery.sticky.js
 scripts[] = a/j/custom.js
+
+;;;;;;;;;;;;;;;;;;;;
+;; Settings
+;;;;;;;;;;;;;;;;;;;;
+settings[google_map_js] = 1
+settings[google_map_latitude] = '43.2852543'
+settings[google_map_longitude] = '-1.964525'
+settings[google_map_zoom] = 16
+settings[google_map_canvas] = 'map-canvas'
+settings[google_map_js] = 1

@@ -52,7 +52,7 @@ select {
   padding: 0.375em 0.625em;
 }
 input[type="submit"] {
-  background-color: $green-d0;
+  background-color: $green-base;
   border: medium none;
   color: white;
   cursor: pointer;
@@ -61,7 +61,7 @@ input[type="submit"] {
   padding: 0.375em 0.75em;
   font-weight: 400;
   &:hover {
-    background-color: $green-base;
+    background-color: $green-d0;
   }
 
 }
@@ -70,6 +70,7 @@ input[type="submit"] {
  * Region Header
  */
 .region.region-header {
+  margin: 1em 0;
   overflow: hidden;
 }
 
@@ -92,11 +93,13 @@ input[type="submit"] {
   }
   #navbar-main-menu {
     text-transform: uppercase;
+    font-weight: 700;
     @media (min-width: 768px) {
-      margin-bottom: 1em;
+      //margin-bottom: 1em;
+      margin-top: 1.5em;
       .active-trail {
         a {
-          border-bottom: dotted 1px rgba($green-base,1);
+          border-bottom: solid 3px rgba($green-base,1);
         }
       }
     }
@@ -115,11 +118,12 @@ input[type="submit"] {
 }
 
 main {
-  font-weight: 300;
+  //font-weight: 300;
   @include rhythm;
   margin-top: 0;
   h1 {
-    @include rhythm(4);
+    @include rhythm(2);
+    line-height: 2.25em;
     text-align: center;
     span {
       padding: 0.5em;
@@ -211,6 +215,17 @@ main {
     dd,
     li {
       margin-bottom: 0.3125em;
+      &::before {
+        font-family: Fontawesome;
+        content: "\f105\0000a0";
+      }
+    }
+  }
+  #block-block-1 {
+    dd {
+      &::before {
+        content: "";
+      }
     }
   }
 }
@@ -219,6 +234,7 @@ main {
  * Footer
  */
 footer {
+  overflow: hidden;
   @include rhythm-borders;
   border: none;
   font-weight: 300;
@@ -250,6 +266,12 @@ footer {
       margin-top: 0;
       font-weight: 700;
       font-size: 1.2em;
+    }
+  }
+  #block-block-2 {
+    li::before {
+      font-family: Fontawesome;
+      content: "\f105\0000a0";
     }
   }
 }
@@ -305,6 +327,17 @@ footer {
       text-align: center;
       text-transform: uppercase;
     }
+    @media only screen and (max-width: 767px) and (min-width: 480px) {
+      width: 70px;
+      .day {
+        padding: 10px;
+        font-size: 21px;
+      }
+      .month {
+        padding: 5px;
+        font-size: 13px;
+      }
+    }
   }
   .content {
     padding-left: 8.125em;
@@ -319,15 +352,41 @@ footer {
       text-align: justify;
     }
     .node-readmore {
+      float: right;
+      transition: all 0.2s ease 0s;
+        &:hover {
+          transform: translate(-0.5em,0);
+        }
       a {
-        float: right;
         position: relative;
         display: block;
         font-weight: 700;
         text-transform: uppercase;
-        transition: all 0.2s ease 0s;
+        text-decoration: none;
         color: $green-base;
+        &:hover {
+          //transform: translate(500px, 10);
+          &::after {
+            font-family: Fontawesome;
+            content: "\0000a0\f105";
+          }
+        }
       }
     }
+  }
+  @media only screen and (max-width: 767px) and (min-width: 480px) {
+    .content {
+      padding-left: 90px;
+    }
+  }
+}
+
+/**
+ * Google map
+ */
+#map-canvas {
+  height: 400px;
+  img {
+    max-width: inherit;
   }
 }

@@ -10,6 +10,57 @@ function tkn01_preprocess_html(&$variables) {
     $variables['head_title_array']['title'] = t('Home');
     $variables['head_title'] = join(' | ', $variables['head_title_array']);
   }
+
+  // Google Map
+  if (theme_get_setting('google_map_js', 'tkn01')) {
+    drupal_add_js('jQuery(document).ready(function($) {
+      var map;
+      var myLatLon;
+      var myZoom;
+      var marker;
+    });', array('type' => 'inline', 'scope' => 'header'));
+
+    drupal_add_js('https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false', array('type' => 'external', 'scope' => 'header', 'group' => 'JS_THEME'));
+    $google_map_latitude = theme_get_setting('google_map_latitude','tkn01');
+    drupal_add_js(array('tkn01' => array('google_map_latitude' => $google_map_latitude)), 'setting');
+    $google_map_longitude = theme_get_setting('google_map_longitude','tkn01');
+    drupal_add_js(array('tkn01' => array('google_map_longitude' => $google_map_longitude)), 'setting');
+    $google_map_zoom = (int) theme_get_setting('google_map_zoom','tkn01');
+    $google_map_canvas = theme_get_setting('google_map_canvas','tkn01');
+    drupal_add_js(array('tkn01' => array('google_map_canvas' => $google_map_canvas)), 'setting');
+
+    drupal_add_js('jQuery(document).ready(function($) {
+      if ($("#'.$google_map_canvas.'").length) {
+        myLatLon = new google.maps.LatLng(Drupal.settings.tkn01[\'google_map_latitude\'],Drupal.settings.tkn01[\'google_map_longitude\']);
+        myZoom = '.$google_map_zoom.';
+
+        function initialize() {
+          var mapOptions = {
+            zoom: myZoom,
+            mapTypeId: google.maps.MapTypeId.ROADMAP,
+            center: myLatLon,
+            scrollwheel: false
+          };
+
+          map = new google.maps.Map(document.getElementById(Drupal.settings.tkn01[\'google_map_canvas\']),mapOptions);
+
+          marker = new google.maps.Marker({
+            map: map,
+            draggable: true,
+            position: myLatLon
+          });
+ 
+          google.maps.event.addDomListener(window, "resize", function() {
+            map.setCenter(myLatLon);
+          });
+
+        }
+
+        google.maps.event.addDomListener(window, "load", initialize);
+
+      }
+      });',array('type' => 'inline', 'scope' => 'header'));
+  }
 }
 
 function tkn01_preprocess_page(&$variables) {
