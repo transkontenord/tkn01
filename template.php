@@ -64,6 +64,8 @@ function tkn01_preprocess_html(&$variables) {
 }
 
 function tkn01_preprocess_page(&$variables) {
+  $active_trail = menu_get_active_trail();
+  $news = ['News', 'Noticias','Contact','Contacto'];
   if (isset($variables['node'])) {
     $node = $variables['node'];
     // Page suggestions
@@ -75,6 +77,13 @@ function tkn01_preprocess_page(&$variables) {
       $banner = image_style_url('page_banner', $banner[0]['uri']);
       $variables['banner'] = $banner;
     }
+  }
+
+  if (!drupal_is_front_page() && in_array($active_trail[1]['title'], $news)) {
+    $variables['banner'] = base_path() . path_to_theme() . '/a/i/banner01.jpg';
+  }
+  if (drupal_is_front_page()) {
+    $variables['banner'] = base_path() . path_to_theme() . '/a/i/banner01.jpg';
   }
 
   // Primary nav

@@ -148,7 +148,7 @@ input[type="submit"]:hover {
  * Region Header
  */
 .region.region-header {
-  margin: 1em 0;
+  margin: 0.5em 0 0 0;
   overflow: hidden;
 }
 
@@ -170,7 +170,6 @@ input[type="submit"]:hover {
 }
 #main-menu.navbar #navbar-main-menu {
   text-transform: uppercase;
-  font-weight: 700;
 }
 @media (min-width: 768px) {
   #main-menu.navbar #navbar-main-menu {
@@ -229,8 +228,6 @@ main .container-fluid.bg-green {
   background-color: #a2cd00;
   color: white;
   margin-bottom: 1.5em;
-}
-main.page .container-fluid.bg-green {
   background-size: cover;
   background-position: center left;
   background-repeat: no-repeat;
@@ -280,6 +277,9 @@ main.page .content article.equipo .caption h1, main.page .content article.equipo
   padding-top: 0em;
   padding-bottom: 0em;
   margin-bottom: 0em;
+}
+main #content {
+  overflow: hidden;
 }
 
 /**

@@ -32,15 +32,16 @@
 </aside>
 <?php endif; ?>
 
-
-
 <main>
-  <div class="container-fluid bg-green">
+<?php if (isset($banner)): ?>
+  <?php $bg = 'style = "background-image: url(' . $banner . ');"'; ?>
+<?php endif; ?>
+  <div class="container-fluid bg-green" <?php if(isset($banner)) { print $bg;} ?>>
     <h1><span><?php print $title; ?></span></h1>
   </div>
   <div class="container">
     <div class="row">
-      <div class="col-md-9">
+      <div id="content" class="col-md-9">
         <?php print render($page['before_content']); ?>
         <?php if ($tabs): ?>
         <?php print render($tabs); ?>

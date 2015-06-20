@@ -70,7 +70,7 @@ input[type="submit"] {
  * Region Header
  */
 .region.region-header {
-  margin: 1em 0;
+  margin: 0.5em 0 0 0;
   overflow: hidden;
 }
 
@@ -93,7 +93,7 @@ input[type="submit"] {
   }
   #navbar-main-menu {
     text-transform: uppercase;
-    font-weight: 700;
+    //font-weight: 700;
     @media (min-width: 768px) {
       //margin-bottom: 1em;
       margin-top: 1.5em;
@@ -143,19 +143,12 @@ main {
     background-color: $green-base;
     color: white;
     margin-bottom: 1.5em;
+    background-size: cover;
+    background-position: center left;
+    background-repeat: no-repeat;
   }
   &.page {
     //font-weight: 300;
-    .container-fluid.bg-green {
-      //@include background($green-base image-url("/sites/all/themes/tkn01/a/i/truck_1.jpg"));
-      background-size: cover;
-      background-position: center left;
-      background-repeat: no-repeat;
-      h1 {
-        //color: white;
-      }
-    }
-
     .content {
       .field-name-field-page-intro {
         @include adjust-font-size-to(19px, 1.5);
@@ -192,6 +185,9 @@ main {
         }
       }
     }
+  }
+  #content {
+    overflow: hidden;
   }
 }
 
