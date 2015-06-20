@@ -65,7 +65,7 @@ function tkn01_preprocess_html(&$variables) {
 
 function tkn01_preprocess_page(&$variables) {
   $active_trail = menu_get_active_trail();
-  $news = ['News', 'Noticias','Contact','Contacto'];
+  $news = array('News', 'Noticias','Contact','Contacto');
   if (isset($variables['node'])) {
     $node = $variables['node'];
     // Page suggestions
