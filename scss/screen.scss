@@ -323,7 +323,7 @@ footer {
       text-align: center;
       text-transform: uppercase;
     }
-    @media only screen and (max-width: 767px) and (min-width: 480px) {
+    @media only screen and (max-width: 767px) {
       width: 70px;
       .day {
         padding: 10px;
@@ -370,7 +370,7 @@ footer {
       }
     }
   }
-  @media only screen and (max-width: 767px) and (min-width: 480px) {
+  @media only screen and (max-width: 767px) {
     .content {
       padding-left: 90px;
     }
@@ -381,11 +381,52 @@ footer {
 		text-align: justify;
 	}
 }
+.node-terminal {
+	@include rhythm;
+	position: relative;
+	header {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		z-index: 10;
+		background-color: rgba(0,0,0,0.8);
+		padding: 0 1em;
+		a {
+			color: white;
+		}
+	}
+}
+.view-terminales {
+	li {
+		&::before {
+			font-family: Fontawesome;
+			content: "\f178\0000a0";
+			color: $green-base;
+		}
+		&:hover {
+			a {
+				color: $green-base;
+			}
+		}
+		a {
+			text-decoration: none;
+		}
+	}
+	ul#terminales {
+		li {
+			&::before {
+				content: none;
+			}
+		}
+	}
+}
 
 /**
  * Google map
  */
 #map-canvas {
+	@include rhythm;
   height: 400px;
   img {
     max-width: inherit;

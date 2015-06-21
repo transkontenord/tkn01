@@ -1,5 +1,6 @@
 *.swp
 .sass-cache
-a/j
+a/j/*/
+!a/j/custom.js
 node_modules/
 npm-debug.log
