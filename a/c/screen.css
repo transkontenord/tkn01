@@ -96,12 +96,12 @@ h6 {
 
 a,
 a:visited {
-  color: #405200;
+  color: #415200;
 }
 
 a:hover,
 a:focus {
-  color: #718f00;
+  color: #719000;
 }
 
 dt {
@@ -110,7 +110,7 @@ dt {
 
 strong {
   font-weight: 700;
-  color: #718f00;
+  color: #719000;
 }
 
 em {
@@ -141,7 +141,7 @@ input[type="submit"] {
   font-weight: 400;
 }
 input[type="submit"]:hover {
-  background-color: #718f00;
+  background-color: #719000;
 }
 
 /**
@@ -239,7 +239,7 @@ main.page .content .field-name-field-page-intro {
   border-style: solid;
   padding: 1.4375em;
   border: none;
-  border-bottom: solid 1px #405200;
+  border-bottom: solid 1px #415200;
 }
 main.page .content .field-name-field-page-intro p {
   font-weight: 400;
@@ -325,15 +325,15 @@ footer {
   border: none;
   font-weight: 300;
   background-color: #333;
-  color: #bddc4c;
+  color: #bedc4d;
 }
 footer a,
 footer a:visited {
-  color: #d9eb99;
+  color: #daeb99;
 }
 footer a:hover,
 footer a:focus {
-  color: #bddc4c;
+  color: #bedc4d;
 }
 footer dl dt {
   display: none;
@@ -343,12 +343,12 @@ footer .block {
   border-style: solid;
   padding: 1.4375em;
   border: none;
-  border-bottom: dotted 1px #718f00;
+  border-bottom: dotted 1px #719000;
 }
 @media (min-width: 768px) {
   footer .block {
     border-bottom: none;
-    border-right: dotted 1px #718f00;
+    border-right: dotted 1px #719000;
   }
 }
 footer .block h2 {
@@ -467,6 +467,10 @@ footer #block-block-2 li::before {
   .node-post .content {
     padding-left: 90px;
   }
+}
+
+.node-page .field-name-field-page-intro {
+  text-align: justify;
 }
 
 /**
