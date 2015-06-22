@@ -432,3 +432,54 @@ footer {
     max-width: inherit;
   }
 }
+
+/**
+ * Panels
+ */
+.panel {
+	.panel-heading {
+		text-transform: uppercase;
+		background-color: $green-base;
+		color: white;
+	}
+	.panel-body {
+		img {
+			margin: auto;
+			width: 100%;
+			max-width: 100%;
+			height: auto;
+		}
+	}
+	.list-group {
+		li {
+			&::before {
+				font-family: Fontawesome;
+				content: "\f178\0000a0";
+				color: $green-base;
+			}
+		}
+	}
+}
+
+/**
+ * Page: history
+ */
+.node-page {
+	#history {
+
+	}
+	dl dt {
+		display: block-inline;
+	}
+	dl dd {
+		display: block-inline;
+	}
+	.row.valores {
+		text-align: center;
+	}
+	.row.localizacion {
+		@include rhythm-borders;
+		border: none;
+		background-color: $green-l1;
+	}
+}

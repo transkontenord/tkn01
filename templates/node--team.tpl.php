@@ -79,7 +79,7 @@
  *
  * @ingroup themeable
  */
-dpm($content);
+//dpm($content);
 unset($content['field_team_member_photo'][0]['#image_style']);
 unset($content['field_team_member_photo'][0]['#item']['width']);
 unset($content['field_team_member_photo'][0]['#item']['height']);

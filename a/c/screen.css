@@ -522,4 +522,44 @@ footer #block-block-2 li::before {
   max-width: inherit;
 }
 
+/**
+ * Panels
+ */
+.panel .panel-heading {
+  text-transform: uppercase;
+  background-color: #a2cd00;
+  color: white;
+}
+.panel .panel-body img {
+  margin: auto;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+.panel .list-group li::before {
+  font-family: Fontawesome;
+  content: "\f178\0000a0";
+  color: #a2cd00;
+}
+
+/**
+ * Page: history
+ */
+.node-page dl dt {
+  display: block-inline;
+}
+.node-page dl dd {
+  display: block-inline;
+}
+.node-page .row.valores {
+  text-align: center;
+}
+.node-page .row.localizacion {
+  border-width: 0.0625em;
+  border-style: solid;
+  padding: 1.4375em;
+  border: none;
+  background-color: #daeb99;
+}
+
 /*# sourceMappingURL=screen.css.map */

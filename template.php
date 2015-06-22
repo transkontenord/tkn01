@@ -66,7 +66,7 @@ function tkn01_preprocess_html(&$variables) {
 function tkn01_preprocess_page(&$variables) {
   $active_trail = menu_get_active_trail();
   $news = array('News', 'Noticias','Contact','Contacto');
-  $banner = base_path() . path_to_theme() . '/a/i/banner02.jpg';
+  $banner = base_path() . path_to_theme() . '/a/i/banner03.jpg';
   $variables['banner'] = $banner;
 
   if (isset($variables['node'])) {
