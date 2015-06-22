@@ -99,11 +99,11 @@ function tkn01_preprocess_page(&$variables) {
 
 function tkn01_preprocess_node(&$variables) {
   $node = $variables['node'];
-    if ($node->type == 'post' && !empty($node->field_imagen)) {
-      $foto = field_get_items('node',$node,'field_imagen');
-      $foto = image_style_url('page_banner', $foto[0]['uri']);
-      $variables['foto'] = $foto;
-    }
+  if ($node->type == 'post' && !empty($node->field_imagen)) {
+    $foto = field_get_items('node',$node,'field_imagen');
+    $foto = image_style_url('page_banner', $foto[0]['uri']);
+    $variables['foto'] = $foto;
+  }
 }
 
 function tkn01_preprocess_block(&$variables) {

@@ -10,19 +10,14 @@
 <?php if (!empty($title)): ?>
   <h3><?php print $title; ?></h3>
 <?php endif; ?>
+<ul>
 <div class="row">
 <?php foreach ($rows as $id => $row): ?>
-<?php 
-if (!$classes_array[$id]) { 
-  $classes_array[$id] = 'col-xs-12 col-sm-6 col-md-4';
-} else {
-  $classes_array[$id] .= ' col-xs-12 col-sm-6 col-md-4';
-}
-?>
-  <div<?php if ($classes_array[$id]) { print ' class="' . $classes_array[$id] .'"';  } ?>>
+  <li<?php if ($classes_array[$id]) { print ' class="' . $classes_array[$id] .'"';  } ?>>
     <?php print $row; ?>
-  </div>
+  </li>
 <?php endforeach; ?>
 </div>
+</ul>
 
 

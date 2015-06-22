@@ -41,7 +41,7 @@
   </div>
   <div class="container">
     <div class="row">
-      <div id="content" class="col-md-9">
+    <div id="content"<?php if($page['sidebar_first']): ?> class="col-md-9"<?php endif; ?>>
         <?php print render($page['before_content']); ?>
         <?php if ($tabs): ?>
         <?php print render($tabs); ?>
@@ -49,9 +49,11 @@
         <?php print render($page['content']); ?>
         <?php print render($page['after_content']); ?>
       </div>
+      <?php if($page['sidebar_first']): ?>
       <div class="col-md-3">
         <?php print render($page['sidebar_first']); ?>
       </div>
+      <?php endif; ?>
     </div>
   </div>
 </main>
