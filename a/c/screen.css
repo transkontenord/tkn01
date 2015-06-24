@@ -96,12 +96,12 @@ h6 {
 
 a,
 a:visited {
-  color: #415200;
+  color: #405200;
 }
 
 a:hover,
 a:focus {
-  color: #719000;
+  color: #718f00;
 }
 
 dt {
@@ -109,8 +109,8 @@ dt {
 }
 
 strong {
-  font-weight: 700;
-  color: #719000;
+  font-weight: 400;
+  color: #718f00;
 }
 
 em {
@@ -141,7 +141,11 @@ input[type="submit"] {
   font-weight: 400;
 }
 input[type="submit"]:hover {
-  background-color: #719000;
+  background-color: #718f00;
+}
+
+sup {
+  font-size: 0.8em;
 }
 
 /**
@@ -191,6 +195,7 @@ input[type="submit"]:hover {
 }
 
 main {
+  font-weight: 300;
   margin-top: 1.5em;
   padding-top: 0em;
   padding-bottom: 0em;
@@ -239,10 +244,7 @@ main.page .content .field-name-field-page-intro {
   border-style: solid;
   padding: 1.4375em;
   border: none;
-  border-bottom: solid 1px #415200;
-}
-main.page .content .field-name-field-page-intro p {
-  font-weight: 400;
+  border-bottom: solid 1px #405200;
 }
 main.page .content .field-name-body {
   margin-top: 1.5em;
@@ -325,15 +327,15 @@ footer {
   border: none;
   font-weight: 300;
   background-color: #333;
-  color: #bedc4d;
+  color: #bddc4c;
 }
 footer a,
 footer a:visited {
-  color: #daeb99;
+  color: #d9eb99;
 }
 footer a:hover,
 footer a:focus {
-  color: #bedc4d;
+  color: #bddc4c;
 }
 footer dl dt {
   display: none;
@@ -343,12 +345,12 @@ footer .block {
   border-style: solid;
   padding: 1.4375em;
   border: none;
-  border-bottom: dotted 1px #719000;
+  border-bottom: dotted 1px #718f00;
 }
 @media (min-width: 768px) {
   footer .block {
     border-bottom: none;
-    border-right: dotted 1px #719000;
+    border-right: dotted 1px #718f00;
   }
 }
 footer .block h2 {
@@ -474,10 +476,10 @@ footer #block-block-2 li::before {
 }
 
 .node-terminal {
-  margin-top: 1.5em;
+  margin-top: 4.5em;
   padding-top: 0em;
   padding-bottom: 0em;
-  margin-bottom: 1.5em;
+  margin-bottom: 4.5em;
   position: relative;
 }
 .node-terminal header {
@@ -518,6 +520,9 @@ footer #block-block-2 li::before {
   margin-bottom: 1.5em;
   height: 400px;
 }
+#map-canvas.small {
+  height: 250px;
+}
 #map-canvas img {
   max-width: inherit;
 }
@@ -529,6 +534,7 @@ footer #block-block-2 li::before {
   text-transform: uppercase;
   background-color: #a2cd00;
   color: white;
+  font-weight: 700;
 }
 .panel .panel-body img {
   margin: auto;
@@ -545,21 +551,91 @@ footer #block-block-2 li::before {
 /**
  * Page: history
  */
-.node-page dl dt {
-  display: block-inline;
-}
-.node-page dl dd {
-  display: block-inline;
-}
 .node-page .row.valores {
+  text-align: justify;
+}
+.node-page .row.valores h4 {
   text-align: center;
+}
+.node-page .row.valores i {
+  color: #a2cd00;
 }
 .node-page .row.localizacion {
   border-width: 0.0625em;
   border-style: solid;
   padding: 1.4375em;
   border: none;
-  background-color: #daeb99;
+  background-color: #d9eb99;
+}
+.node-page .timeline {
+  width: 100%;
+}
+.node-page .timeline .icon-date-container {
+  background-color: #fff;
+  border: 2px solid #ddd;
+  border-radius: 50%;
+  float: left;
+  height: 70px;
+  position: relative;
+  width: 70px;
+  z-index: 2;
+}
+.node-page .timeline .icon-date-container i {
+  display: table-cell;
+  font-size: 24px;
+  height: 70px;
+  text-align: center;
+  vertical-align: middle;
+  width: 70px;
+  color: #a2cd00;
+}
+.node-page .timeline .timeline-item-details {
+  padding-bottom: 60px;
+  padding-left: 100px;
+  position: relative;
+}
+.node-page .timeline .timeline-item-details h3 {
+  font-size: 1.5em;
+}
+.node-page .timeline li .timeline-item-details::before {
+  background-color: #ddd;
+  content: "";
+  display: block;
+  height: 100%;
+  left: 35px;
+  position: absolute;
+  top: 0;
+  width: 1px;
+  z-index: 1;
+}
+
+/**
+ * Front
+ */
+.call-to-action {
+  border-width: 2;
+  border-style: solid;
+  padding: 1.375em;
+  border: none;
+  background-color: DarkSlateGray;
+  color: white;
+  overflow: hidden;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("/sites/all/themes/tkn01/a/i/parallax01.jpg");
+  background-position: center center;
+}
+.call-to-action .text h2 {
+  font-weight: 700;
+}
+.call-to-action .action {
+  margin-top: 3em;
+}
+.call-to-action .action .btn {
+  color: white;
+  margin: 0 auto;
+  display: table;
 }
 
 /*# sourceMappingURL=screen.css.map */

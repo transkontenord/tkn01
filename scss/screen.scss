@@ -31,7 +31,7 @@ p {
 dt { font-weight: 700; }
 
 strong {
-  font-weight: 700;
+  font-weight: 400;
   color: $green-d0;
 }
 
@@ -63,7 +63,10 @@ input[type="submit"] {
   &:hover {
     background-color: $green-d0;
   }
+}
 
+sup {
+  font-size: 0.8em;
 }
 
 /**
@@ -118,7 +121,7 @@ input[type="submit"] {
 }
 
 main {
-  //font-weight: 300;
+  font-weight: 300;
   @include rhythm;
   margin-top: 0;
   h1 {
@@ -148,7 +151,7 @@ main {
     background-repeat: no-repeat;
   }
   &.page {
-    //font-weight: 300;
+    //font-weight: 400;
     .content {
       .field-name-field-page-intro {
         @include adjust-font-size-to(19px, 1.5);
@@ -156,7 +159,7 @@ main {
         border: none;
         border-bottom: solid 1px $green-d1;
         p {
-          font-weight: 400;
+          //font-weight: 400;
         }
       }
       .field-name-body {
@@ -382,7 +385,7 @@ footer {
 	}
 }
 .node-terminal {
-	@include rhythm;
+	@include rhythm(3);
 	position: relative;
 	header {
 		position: absolute;
@@ -428,6 +431,9 @@ footer {
 #map-canvas {
 	@include rhythm;
   height: 400px;
+  &.small {
+    height: 250px;
+  }
   img {
     max-width: inherit;
   }
@@ -441,6 +447,7 @@ footer {
 		text-transform: uppercase;
 		background-color: $green-base;
 		color: white;
+    font-weight: 700;
 	}
 	.panel-body {
 		img {
@@ -465,21 +472,91 @@ footer {
  * Page: history
  */
 .node-page {
-	#history {
-
-	}
-	dl dt {
-		display: block-inline;
-	}
-	dl dd {
-		display: block-inline;
-	}
 	.row.valores {
-		text-align: center;
+		text-align: justify;
+    h4 {
+      text-align: center;
+    }
+    i {
+      color: $green-base;
+    }
 	}
 	.row.localizacion {
 		@include rhythm-borders;
 		border: none;
 		background-color: $green-l1;
 	}
+  .timeline {
+    width: 100%;
+    li {
+    }
+  }
+  .timeline .icon-date-container {
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 50%;
+    float: left;
+    height: 70px;
+    position: relative;
+    width: 70px;
+    z-index: 2;
+  }
+  .timeline .icon-date-container i {
+    display: table-cell;
+    font-size: 24px;
+    height: 70px;
+    text-align: center;
+    vertical-align: middle;
+    width: 70px;
+    color: $green-base;
+  }
+  .timeline .timeline-item-details {
+    padding-bottom: 60px;
+    padding-left: 100px;
+    position: relative;
+    h3 {
+      font-size: 1.5em;
+    }
+  }
+  .timeline li .timeline-item-details::before {
+    background-color: #ddd;
+    content: "";
+    display: block;
+    height: 100%;
+    left: 35px;
+    position: absolute;
+    top: 0;
+    width: 1px;
+    z-index: 1;
+  }
+}
+
+/**
+ * Front
+ */
+.call-to-action {
+  @include rhythm-borders(2);
+  border: none;
+  background-color: DarkSlateGray;
+  color: white;
+  overflow: hidden;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("/sites/all/themes/tkn01/a/i/parallax01.jpg");
+  background-position: center center;
+
+  .text {
+    h2 {
+      font-weight: 700;
+    }
+  }
+  .action {
+    margin-top: 3em;
+    .btn {
+      color: white;
+      margin: 0 auto;
+      display: table;
+    }
+  }
 }
