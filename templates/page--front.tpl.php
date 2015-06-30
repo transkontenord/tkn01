@@ -59,10 +59,24 @@
       </div>
     </div>
   </div>
+
+  <div class="container region-front">
+    <div class="row">
+      <div class="col-md-4">
+        <?php print render($page['before_content_firstcolumn']); ?>
+      </div>
+      <div class="col-md-4">
+        <?php print render($page['before_content_secondcolumn']); ?>
+      </div>
+      <div class="col-md-4">
+        <?php print render($page['before_content_thirdcolumn']); ?>
+      </div>
+    </div>
+  </div>
+
   <div class="container">
     <?php print render($page['before_content']); ?>
-    <?php print render($page['content']); ?>
-    <?php print render($page['after_content']); ?>
+    <?php //print render($page['content']); ?>
   </div>
 </main>
 

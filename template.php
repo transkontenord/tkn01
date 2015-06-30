@@ -101,7 +101,7 @@ function tkn01_preprocess_node(&$variables) {
   $node = $variables['node'];
   if ($node->type == 'post' && !empty($node->field_imagen)) {
     $foto = field_get_items('node',$node,'field_imagen');
-    $foto = image_style_url('page_banner', $foto[0]['uri']);
+    $foto = image_style_url('foto_noticia', $foto[0]['uri']);
     $variables['foto'] = $foto;
   }
 }
@@ -109,6 +109,9 @@ function tkn01_preprocess_node(&$variables) {
 function tkn01_preprocess_block(&$variables) {
   $block = $variables['block'];
   if ($block->bid === 'locale-language') {
+    $variables['classes_array'][] = 'pull-right';
+  }
+  if ($block->info === 'Teléfono') {
     $variables['classes_array'][] = 'pull-right';
   }
 }

@@ -144,7 +144,8 @@ input[type="submit"]:hover {
   background-color: #718f00;
 }
 
-sup {
+sup,
+sub {
   font-size: 0.8em;
 }
 
@@ -154,6 +155,22 @@ sup {
 .region.region-header {
   margin: 0.5em 0 0 0;
   overflow: hidden;
+}
+.region.region-header .block {
+  border-left-width: 0.0625em;
+  border-left-style: solid;
+  padding-left: 1.4375em;
+  border: none;
+}
+
+/**
+ * REgion Front
+ */
+.region-front {
+  margin-top: 1.5em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 1.5em;
 }
 
 /**
@@ -283,6 +300,12 @@ main.page .content article.equipo .caption h1, main.page .content article.equipo
 main #content {
   overflow: hidden;
 }
+main .region-after-content .block {
+  margin-top: 1.5em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 1.5em;
+}
 
 /**
  * Sidebar First
@@ -325,6 +348,7 @@ footer {
   border-style: solid;
   padding: 1.4375em;
   border: none;
+  padding-bottom: 0.5em;
   font-weight: 300;
   background-color: #333;
   color: #bddc4c;
@@ -354,17 +378,24 @@ footer .block {
   }
 }
 footer .block h2 {
-  margin-top: 1.5em;
-  padding-top: 0em;
-  padding-bottom: 0em;
-  margin-bottom: 1.5em;
-  margin-top: 0;
+  margin-bottom: 0.5em;
   font-weight: 700;
   font-size: 1.2em;
 }
 footer #block-block-2 li::before {
   font-family: Fontawesome;
   content: "\f105\0000a0";
+}
+footer .region-footer {
+  font-size: 0.875em;
+  line-height: 1.71429em;
+}
+footer .region-footer .block {
+  display: inline-block;
+  border: none;
+  margin: 0;
+  margin-left: 1em;
+  padding: 0;
 }
 
 /**
@@ -561,11 +592,16 @@ footer #block-block-2 li::before {
   color: #a2cd00;
 }
 .node-page .row.localizacion {
+  margin-top: 1.5em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 1.5em;
   border-width: 0.0625em;
   border-style: solid;
   padding: 1.4375em;
   border: none;
-  background-color: #d9eb99;
+  padding-left: 0;
+  padding-right: 0;
 }
 .node-page .timeline {
   width: 100%;
@@ -613,10 +649,9 @@ footer #block-block-2 li::before {
  * Front
  */
 .call-to-action {
-  border-width: 2;
+  border-width: 0em;
   border-style: solid;
-  padding: 1.375em;
-  border: none;
+  padding: 3em;
   background-color: DarkSlateGray;
   color: white;
   overflow: hidden;

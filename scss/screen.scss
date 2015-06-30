@@ -65,7 +65,8 @@ input[type="submit"] {
   }
 }
 
-sup {
+sup,
+sub {
   font-size: 0.8em;
 }
 
@@ -75,6 +76,17 @@ sup {
 .region.region-header {
   margin: 0.5em 0 0 0;
   overflow: hidden;
+  .block {
+    @include apply-side-rhythm-border('left');
+    border: none;
+    }
+}
+
+/**
+ * REgion Front
+ */
+.region-front {
+  @include rhythm;
 }
 
 /**
@@ -192,6 +204,12 @@ main {
   #content {
     overflow: hidden;
   }
+
+  .region-after-content {
+    .block {
+      @include rhythm;
+    }
+  }
 }
 
 /**
@@ -236,6 +254,7 @@ footer {
   overflow: hidden;
   @include rhythm-borders;
   border: none;
+  padding-bottom: 0.5em;
   font-weight: 300;
   background-color: $gris-oscuro;
   color: $green-l0;
@@ -261,8 +280,7 @@ footer {
       border-right: dotted 1px $green-d0;
     }
     h2 {
-      @include rhythm;
-      margin-top: 0;
+      margin-bottom: 0.5em;
       font-weight: 700;
       font-size: 1.2em;
     }
@@ -271,6 +289,16 @@ footer {
     li::before {
       font-family: Fontawesome;
       content: "\f105\0000a0";
+    }
+  }
+  .region-footer {
+    @include adjust-font-size-to(14px);
+    .block {
+      display: inline-block;
+      border: none;
+      margin: 0;
+      margin-left: 1em;
+      padding: 0;
     }
   }
 }
@@ -482,9 +510,12 @@ footer {
     }
 	}
 	.row.localizacion {
+    @include rhythm;
 		@include rhythm-borders;
 		border: none;
-		background-color: $green-l1;
+    padding-left: 0;
+    padding-right: 0;
+		//background-color: $green-l1;
 	}
   .timeline {
     width: 100%;
@@ -535,8 +566,7 @@ footer {
  * Front
  */
 .call-to-action {
-  @include rhythm-borders(2);
-  border: none;
+  @include rhythm-borders(0px,2);
   background-color: DarkSlateGray;
   color: white;
   overflow: hidden;
