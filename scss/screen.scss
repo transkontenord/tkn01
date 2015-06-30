@@ -571,7 +571,7 @@ footer {
  * Front
  */
 .call-to-action {
-  @include rhythm-borders(0px,2);
+  @include rhythm-borders(0px,1);
   background-color: DarkSlateGray;
   color: white;
   overflow: hidden;
