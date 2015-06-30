@@ -291,6 +291,11 @@ footer {
       content: "\f105\0000a0";
     }
   }
+  .region-footer-thirdcolumn {
+    .logo {
+      margin: 0 auto;
+    }
+  }
   .region-footer {
     @include adjust-font-size-to(14px);
     .block {
