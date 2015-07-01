@@ -44,14 +44,15 @@
     </div>
   </aside>
   <?php endif; ?>
+
   <div class="call-to-action">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
           <div class="call-to-action">
             <div class="text col-md-9">
-              <h2>Transporte intermodal de vanguardia.</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <h2><?php print t('Transporte intermodal de vanguardia'); ?></h2>
+              <p>La mejor calidad de una compañía líder al servicio del cliente.</p>
             </div>
             <div class="action col-md-3"><a class="btn btn-lg btn-success" href="/contact"><span><?php print t('Learn more'); ?></span></a></div>
           </div>
@@ -75,7 +76,6 @@
   </div>
 
   <div class="container">
-    <?php print render($page['before_content']); ?>
     <?php //print render($page['content']); ?>
   </div>
 </main>
