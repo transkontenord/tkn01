@@ -54,7 +54,7 @@
               <h2><?php print t('Transporte intermodal de vanguardia'); ?></h2>
               <p>La mejor calidad de una compañía líder al servicio del cliente.</p>
             </div>
-            <div class="action col-md-3"><a class="btn btn-lg btn-success" href="/contact"><span><?php print t('Learn more'); ?></span></a></div>
+            <div class="action col-md-3"><a class="btn btn-lg" href="/contact"><span><?php print t('Learn more'); ?></span></a></div>
           </div>
         </div>
       </div>
