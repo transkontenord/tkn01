@@ -683,7 +683,7 @@ footer .region-footer .block {
 .tp-caption.medium_bold_white {
   font-size: 24px;
   line-height: 30px;
-  font-weight: 800;
+  font-weight: 400;
   font-family: "Open Sans";
   color: white;
   text-decoration: none;
@@ -693,6 +693,17 @@ footer .region-footer .block {
   border-style: none;
   padding: 0.5em;
   white-space: pre-line;
+}
+
+.tp-caption {
+  width: 100%;
+  /*
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("/sites/all/themes/tkn01/a/i/parallax01.jpg");
+    background-position: center center;
+  */
 }
 
 /*# sourceMappingURL=screen.css.map */

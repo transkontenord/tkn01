@@ -45,6 +45,7 @@
   </aside>
   <?php endif; ?>
 
+<!--
   <div class="call-to-action">
     <div class="container">
       <div class="row">
@@ -60,6 +61,7 @@
       </div>
     </div>
   </div>
+-->
 
   <div class="container region-front">
     <div class="row">
