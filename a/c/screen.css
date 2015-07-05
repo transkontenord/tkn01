@@ -287,7 +287,8 @@ main.page .content article.equipo .caption {
   padding: 1.4375em;
   border: none;
   width: 100%;
-  background-color: rgba(162, 205, 0, 0.2);
+  background-color: #a2cd00;
+  color: white;
 }
 main.page .content article.equipo .caption h1, main.page .content article.equipo .caption h2 {
   font-size: 1em;
@@ -296,15 +297,31 @@ main.page .content article.equipo .caption h1, main.page .content article.equipo
   padding-top: 0em;
   padding-bottom: 0em;
   margin-bottom: 0em;
+  font-weight: 700;
+}
+main.page .content article.equipo .caption a[href^="mailto:"] {
+  font-weight: 700;
+  color: white;
+}
+main.page .content article.equipo .caption a[href^="mailto:"]::before {
+  font-family: Fontawesome;
+  content: "\f003\0000a0";
 }
 main #content {
   overflow: hidden;
 }
 main .region-after-content .block {
+  margin-top: 3em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 3em;
+}
+main .region-after-content .block > h2 {
   margin-top: 1.5em;
   padding-top: 0em;
   padding-bottom: 0em;
   margin-bottom: 1.5em;
+  margin-top: 0;
 }
 
 /**

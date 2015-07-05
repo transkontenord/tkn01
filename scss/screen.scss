@@ -189,13 +189,21 @@ main {
           @include rhythm-borders;
           border: none;
           width: 100%;
-          background-color: rgba($green-base,0.2);
+          background-color: rgba($green-base,1);
+          color: white;
           //@include adjust-font-size-to(12px, 1.5);
           h1, h2 {
             @include adjust-font-size-to(16px, 1.5);
             @include rhythm(0);
+            font-weight: 700;
           }
-          a.social {
+          a[href^="mailto:"] {
+            font-weight: 700;
+            color: white;
+            &::before {
+              font-family: Fontawesome;
+              content: "\f003\0000a0";
+            }
           }
         }
       }
@@ -207,7 +215,11 @@ main {
 
   .region-after-content {
     .block {
-      @include rhythm;
+      @include rhythm(2);
+      >h2 {
+        @include rhythm;
+        margin-top: 0;
+      }
     }
   }
 }
@@ -505,6 +517,8 @@ footer {
  * Page: history
  */
 .node-page {
+  .block {
+  }
 	.row.valores {
 		text-align: justify;
     h4 {
