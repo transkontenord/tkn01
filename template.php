@@ -64,8 +64,8 @@ function tkn01_preprocess_html(&$variables) {
 }
 
 function tkn01_preprocess_page(&$variables) {
-  $active_trail = menu_get_active_trail();
-  $news = array('News', 'Noticias','Contact','Contacto');
+  //$active_trail = menu_get_active_trail();
+  //$news = array('News', 'Noticias','Contact','Contacto');
   $banner = base_path() . path_to_theme() . '/a/i/banner03.jpg';
   $variables['banner'] = $banner;
 
@@ -82,12 +82,12 @@ function tkn01_preprocess_page(&$variables) {
     }
   }
 
-  if (!drupal_is_front_page() && in_array($active_trail[1]['title'], $news)) {
+  //if (!drupal_is_front_page() && (count($active_trail) > 1) && in_array($active_trail[1]['title'], $news)) {
     //$variables['banner'] = base_path() . path_to_theme() . '/a/i/banner01.jpg';
-  }
-  if (drupal_is_front_page()) {
+  //}
+  //if (drupal_is_front_page()) {
     //$variables['banner'] = base_path() . path_to_theme() . '/a/i/banner01.jpg';
-  }
+  //}
 
   // Primary nav
   $variables['primary_nav'] = FALSE;
