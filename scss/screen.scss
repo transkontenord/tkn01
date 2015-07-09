@@ -424,6 +424,11 @@ footer {
     }
   }
 }
+.region-before-content-thirdcolumn {
+  .node-post {
+    border-bottom: none;
+  }
+}
 .node-page {
 	.field-name-field-page-intro {
 		text-align: justify;
