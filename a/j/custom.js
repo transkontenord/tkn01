@@ -30,4 +30,17 @@ vdj(document).ready(function($) {
     vdj('html, body').animate({scrollTop: 0}, duration);
     return false;
   })
+
+  // OwlCarousel2
+  vdj('.owl-carousel').owlCarousel({
+    items: 3,
+    nav: true,
+    navRewind: true,
+    dots: false,
+    loop: false,
+    margin: 10,
+    autoplay: true,
+    autoplayTimeout: 5000,
+    autoplayHoverPause: true,
+  });
 });

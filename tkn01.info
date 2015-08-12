@@ -29,6 +29,8 @@ regions[footer]                          = Footer
 
 stylesheets[all][] = a/j/bootstrap/dist/css/bootstrap.min.css
 stylesheets[all][] = a/j/slider-revolution/src/css/settings.css
+stylesheets[all][] = a/j/OwlCarousel2/dist/assets/owl.carousel.min.css
+stylesheets[all][] = a/j/OwlCarousel2/dist/assets/owl.theme.green.min.css
 stylesheets[screen, projection][] = a/c/screen.css
 stylesheets[print][] = a/c/print.css
 
@@ -39,6 +41,7 @@ stylesheets[print][] = a/c/print.css
 scripts[] = a/j/bootstrap/dist/js/bootstrap.min.js
 scripts[] = a/j/slider-revolution/src/js/jquery.themepunch.plugins.min.js
 scripts[] = a/j/slider-revolution/src/js/jquery.themepunch.revolution.min.js
+scripts[] = a/j/OwlCarousel2/dist/owl.carousel.min.js
 scripts[] = a/j/sticky/jquery.sticky.js
 scripts[] = a/j/custom.js
 
