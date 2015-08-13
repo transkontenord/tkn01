@@ -1,5 +1,6 @@
 var vdj = jQuery;
 vdj.noConflict();
+var container;
 
 vdj(document).ready(function($) {
   // sticky: Inicio
@@ -33,28 +34,15 @@ vdj(document).ready(function($) {
 
   // OwlCarousel2
   vdj('.owl-carousel').owlCarousel({
-    items: 3,
+    items: 1,
     nav: true,
     navRewind: true,
     dots: false,
-    loop: false,
+    loop: true,
     margin: 10,
     autoplay: true,
     autoplayTimeout: 5000,
     autoplayHoverPause: true,
-    responsiveClass: true,
-    responsiveBaseElement: ".panel-default",
-    responsive: {
-      0:{
-        items:1,
-        loop: true
-      },
-      768: {
-        items:3
-      },
-      1024:{
-        items:5
-      }
-    }
   });
+
 });
