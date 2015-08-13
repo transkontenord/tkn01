@@ -42,5 +42,19 @@ vdj(document).ready(function($) {
     autoplay: true,
     autoplayTimeout: 5000,
     autoplayHoverPause: true,
+    responsiveClass: true,
+    responsiveBaseElement: ".panel-default",
+    responsive: {
+      0:{
+        items:1,
+        loop: true
+      },
+      768: {
+        items:3
+      },
+      1024:{
+        items:5
+      }
+    }
   });
 });
