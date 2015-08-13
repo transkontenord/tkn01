@@ -64,7 +64,7 @@ function tkn01_preprocess_html(&$variables) {
 }
 
 function tkn01_preprocess_page(&$variables) {
-  //$active_trail = menu_get_active_trail();
+  $active_trail = menu_get_active_trail();
   //$news = array('News', 'Noticias','Contact','Contacto');
   $banner = base_path() . path_to_theme() . '/a/i/banner03.jpg';
   $variables['banner'] = $banner;
@@ -80,6 +80,11 @@ function tkn01_preprocess_page(&$variables) {
       $banner = image_style_url('page_banner', $banner[0]['uri']);
       $variables['banner'] = $banner;
     }
+  }
+  // Contact banner
+  if (count($active_trail) > 1 && $active_trail[1]['link_path'] == 'contact') {
+    $banner = base_path() . path_to_theme() . '/a/i/banner-contacto.jpg';
+    $variables['banner'] = $banner;
   }
 
   //if (!drupal_is_front_page() && (count($active_trail) > 1) && in_array($active_trail[1]['title'], $news)) {
