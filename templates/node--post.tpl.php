@@ -88,10 +88,11 @@
   <?php
     $dia =  date('d',$created);
     $mes =  date('M',$created);
+    $ano =  date('Y',$created);
   ?>
   <div class="post-date">
     <p class="day"><?php print $dia; ?></p>
-    <p class="month"><?php print $mes; ?></p>
+    <p class="month"><?php print $mes . ' - ' . $ano; ?></p>
   </div>
 
 
