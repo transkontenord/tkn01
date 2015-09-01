@@ -172,6 +172,20 @@ sub {
   padding-bottom: 0em;
   margin-bottom: 1.5em;
 }
+.region-front .region {
+  margin-top: 1.5em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 1.5em;
+  margin-top: 5em;
+}
+.region-front .region h2 {
+  margin-top: 1.5em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 1.5em;
+  margin-top: 0;
+}
 
 /**
  * Menú

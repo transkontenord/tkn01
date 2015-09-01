@@ -87,6 +87,14 @@ sub {
  */
 .region-front {
   @include rhythm;
+	.region {
+		@include rhythm;
+		margin-top: 5em;
+		h2 {
+			@include rhythm;
+			margin-top: 0;
+		}
+	}
 }
 
 /**
