@@ -47,13 +47,13 @@
 
   <div class="container region-front">
     <div class="row">
-      <div class="col-sm-6 col-md-4">
+      <div class="col-md-4">
         <?php print render($page['before_content_firstcolumn']); ?>
       </div>
-      <div class="col-sm-6 col-md-4">
+      <div class="col-md-4">
         <?php print render($page['before_content_secondcolumn']); ?>
       </div>
-      <div class="col-sm-12 col-md-4">
+      <div class="col-md-4">
         <?php print render($page['before_content_thirdcolumn']); ?>
       </div>
     </div>
