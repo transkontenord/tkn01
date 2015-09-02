@@ -87,6 +87,10 @@ sub {
  */
 .region-front {
   @include rhythm;
+	.region-before-content-firstcolumn,
+	.region-before-content-secondcolumn,
+	.region-before-content-thirdcolumn {
+	}
 	.region {
 		@include rhythm;
 		margin-top: 5em;
@@ -392,7 +396,8 @@ footer {
     }
   }
   .content {
-    padding-left: 8.125em;
+		@include rhythm;
+    //padding-left: 8.125em;
     h3 {
       margin-bottom: 1.5em;
       font-weight: 700;
@@ -423,6 +428,9 @@ footer {
             content: "\0000a0\f105";
           }
         }
+				.element-invisible {
+					display: none;
+				}
       }
     }
   }

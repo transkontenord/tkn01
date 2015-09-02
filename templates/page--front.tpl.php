@@ -45,41 +45,20 @@
   </aside>
   <?php endif; ?>
 
-<!--
-  <div class="call-to-action">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="call-to-action">
-            <div class="text col-md-9">
-              <h2><?php print t('Transporte intermodal de vanguardia'); ?></h2>
-              <p>La mejor calidad de una compañía líder al servicio del cliente.</p>
-            </div>
-            <div class="action col-md-3"><a class="btn btn-lg" href="/contact"><span><?php print t('Learn more'); ?></span></a></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
--->
-
   <div class="container region-front">
     <div class="row">
-      <div class="col-md-4">
+      <div class="col-sm-6 col-md-4">
         <?php print render($page['before_content_firstcolumn']); ?>
       </div>
-      <div class="col-md-4">
+      <div class="col-sm-6 col-md-4">
         <?php print render($page['before_content_secondcolumn']); ?>
       </div>
-      <div class="col-md-4">
+      <div class="col-sm-12 col-md-4">
         <?php print render($page['before_content_thirdcolumn']); ?>
       </div>
     </div>
   </div>
 
-  <div class="container">
-    <?php //print render($page['content']); ?>
-  </div>
 </main>
 
 <footer>
