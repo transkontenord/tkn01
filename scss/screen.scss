@@ -639,9 +639,11 @@ footer {
 font-size:24px;
 line-height:30px;
 font-weight:400;
-font-family:"Open Sans";
-color:white;
+font-family:"Source Sans Pro";
+//color:white;
+color: $green-base;
 text-decoration:none;
+text-transform: uppercase;
 background-color: rgba(0,0,0,0.5);
 border-width:0px;
 border-color:rgb(255, 214, 88);

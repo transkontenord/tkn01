@@ -86,7 +86,11 @@ function tkn01_preprocess_page(&$variables) {
     $banner = base_path() . path_to_theme() . '/a/i/banner-contacto.jpg';
     $variables['banner'] = $banner;
   }
-
+  // Contact banner
+  if (count($active_trail) > 1 && $active_trail[1]['link_path'] == 'noticias') {
+    $banner = base_path() . path_to_theme() . '/a/i/banner04.jpg';
+    $variables['banner'] = $banner;
+  }
   //if (!drupal_is_front_page() && (count($active_trail) > 1) && in_array($active_trail[1]['title'], $news)) {
     //$variables['banner'] = base_path() . path_to_theme() . '/a/i/banner01.jpg';
   //}
