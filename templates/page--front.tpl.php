@@ -59,7 +59,13 @@
     </div>
   </div>
 
+  <?php if ($page['after_content']): ?>
+  <div class="container">
+  <div class="row">
   <?php print render($page['after_content']); ?>
+  </div>
+  </div>
+  <?php endif; ?>
 </main>
 
 <footer>
