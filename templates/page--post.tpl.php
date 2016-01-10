@@ -36,7 +36,7 @@
 
 <main class="page">
   <?php if (isset($banner)): ?>
-    <?php $bg = 'style = "background-image: url(' . $banner . ');"'; ?>
+    <?php $bg = 'style = "background-image: url(' . $banner . ');background-size: cover;background-position: center bottom"'; ?>
   <?php endif; ?>
   <div class="container-fluid bg-green" <?php if(isset($banner)) { print $bg;} ?>>
     <h1><span><?php print t('news'); ?></span></h1>
