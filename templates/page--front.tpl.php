@@ -59,6 +59,7 @@
     </div>
   </div>
 
+  <?php print render($page['after_content']); ?>
 </main>
 
 <footer>
