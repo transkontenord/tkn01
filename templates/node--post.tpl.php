@@ -91,6 +91,9 @@
     <p class="day"><?php print $dia; ?></p>
     <p class="month"><?php print $mes . ' - ' . $ano; ?></p>
   </div>
+  <div class="meta">
+  <?php print render($content['field_tags']); ?>
+  </div>
 
 
   <div class="content"<?php print $content_attributes; ?>>

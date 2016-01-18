@@ -395,6 +395,20 @@ footer {
       }
     }
   }
+  .meta {
+    clear: both;
+    float: left;
+    width: 6.25em;
+    .field-items {
+      @include adjust-font-size-to(12px);
+      padding: 0.3em 0.5em;
+    }
+    @media only screen and (max-width: 767px) {
+      width: 70px;
+      .field-items {
+      }
+    }
+  }
   .content {
 		@include rhythm;
     padding-left: 8.125em;
