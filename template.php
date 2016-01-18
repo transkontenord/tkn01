@@ -113,6 +113,30 @@ function tkn01_preprocess_node(&$variables) {
     $foto = image_style_url('foto_noticia', $foto[0]['uri']);
     $variables['foto'] = $foto;
   }
+  if ($node->type == 'post' && !empty($node->field_galeria)) {
+    $node_fotos = field_get_items('node',$node,'field_galeria');
+    $fotos = Array();
+    foreach ($node_fotos as $id => $foto) {
+      $fotos[] = image_style_url('square_480x480',$foto['uri']);
+    }
+    $variables['fotos'] = $fotos;
+  }
+  if ($node->type == 'post' && !empty($node->field_videos)) {
+    $node_videos = field_get_items('node',$node,'field_videos');
+    $videos = Array();
+    foreach ($node_videos as $id => $video) {
+      $videos[] = $video;
+    }
+    $variables['videos'] = $videos;
+  }
+  if ($node->type == 'post' && !empty($node->field_adjuntos)) {
+    $node_adjuntos = field_get_items('node',$node,'field_adjuntos');
+    $adjuntos = Array();
+    foreach ($node_adjuntos as $id => $adjunto) {
+      $adjuntos[] = $adjunto;
+    }
+    $variables['adjuntos'] = $adjuntos;
+  }
 }
 
 function tkn01_preprocess_block(&$variables) {

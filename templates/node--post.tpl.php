@@ -79,12 +79,9 @@
  *
  * @ingroup themeable
  */
+//kpr($node);
 ?>
 <article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?>"<?php print $attributes; ?>>
-  <?php if (isset($foto) && $page): ?>
-    <img src="<?php print $foto; ?>" class="img-responsive">
-  <?php endif; ?>
-
   <?php
     $dia =  date('d',$created);
     $mes =  date('M',$created);
@@ -101,6 +98,9 @@
     <?php print render($title_prefix); ?>
     <h1<?php print $title_attributes; ?>><?php print $title; ?></h1>
     <?php print render($title_suffix); ?>
+    <?php if (isset($foto) && $page): ?>
+      <img src="<?php print $foto; ?>" class="img-responsive">
+    <?php endif; ?>
   <?php endif; ?>
     <?php if (!$page): ?>
       <?php print render($title_prefix); ?>
@@ -115,6 +115,41 @@
       hide($content['field_page_banner']); // It's render in page--page.tpl.php
       print render($content);
     ?>
+    <?php if (isset($fotos) && $page): ?>
+      <h4><?php print t('Photo Galery'); ?></h4>
+      <div class="row">
+      <?php foreach ($fotos as $id => $foto): ?>
+        <img src="<?php print $foto; ?>" class="img-responsive col-md-4">
+      <?php endforeach; ?>
+      </div>
+    <?php endif; ?>
+
+    <?php if (isset($videos) && $page): ?>
+      <h4><?php print t('Video Galery'); ?></h4>
+      <div class="row">
+      <?php foreach($videos as $id => $video): ?>
+      <?php $source = file_create_url($video['uri']); ?>
+      <video controls="controls">
+        <source src="<?php print $source; ?>" type="<?php print $video['filemime']; ?>" />
+      </video>
+    <?php endforeach; ?>
+      </div>
+    <?php endif; ?>
+
+    <?php if (isset($adjuntos) && $page): ?>
+      <h4><?php print t('Files'); ?></h4>
+      <div class="row">
+      <?php foreach($adjuntos as $id => $adjunto): ?>
+      <?php $source = file_create_url($adjunto['uri']); ?>
+      <div>
+      <a href="<?php print $source; ?>" target="_blank" />
+        <i class="fa fa-file-o"> </i> <?php print $adjunto['filename']; ?>
+      </a>
+      </div>
+    <?php endforeach; ?>
+      </div>
+    <?php endif; ?>
+
     <?php print render($content['links']); ?>
   </div>
 
