@@ -47,6 +47,8 @@
         <?php print render($tabs); ?>
         <?php endif; ?>
         <?php print render($page['content']); ?>
+        <?php print render($page['after_content_firstcolumn']); ?>
+        <?php print render($page['after_content_secondcolumn']); ?>
         <?php print render($page['after_content']); ?>
       </div>
       <?php if($page['sidebar_first']): ?>

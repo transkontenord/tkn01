@@ -51,6 +51,14 @@
   <div class="container">
     <?php print render($page['before_content']); ?>
     <?php print render($page['content']); ?>
+    <div class="row">
+      <div class="col-md-6">
+    <?php print render($page['after_content_firstcolumn']); ?>
+    </div>
+      <div class="col-md-6">
+    <?php print render($page['after_content_secondcolumn']); ?>
+    </div>
+    </div>
     <?php print render($page['after_content']); ?>
   </div>
 </main>
