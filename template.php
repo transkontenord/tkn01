@@ -188,3 +188,33 @@ function tkn01_theme() {
 function tkn01_preprocess_contact_site_form(&$variables) {
   $variables['contact'] = drupal_render_children($variables['form']);
 }
+function tkn01_form_alter(&$form, &$form_state, $form_id) {
+  global $language;
+  if ($form_id == 'contact_site_form') {
+    $form['gdpr'] = array(
+      '#type' => 'checkbox',
+      '#attributes' => array(
+        'class' => array(
+          'required',
+        ),
+        'id' => 'edit-gdpr',
+        'name' => 'gdpr',
+      ),
+      '#title' => t('I have read and accept <a href="@url">the legal conditions</a>', array('@url' => ('node/123')), array('language' => $language)),
+      '#required' => true,
+    );
+    $order = array(
+      'name',
+      'mail',
+      'subject',
+      'cid',
+      'message',
+      'gdpr',
+      'copy',
+      'submit',
+    );
+    foreach ($order as $key => $field) {
+      $form[$field]['#weight'] = $key;
+    }
+  }
+}
